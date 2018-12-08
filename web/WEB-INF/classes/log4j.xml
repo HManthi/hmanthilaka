@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+    <appender name="FILE" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="${app.home}/logs/fleetmanagement.log"/>
+        <param name="DatePattern" value="'.'yyyy-MM-dd"/>
+        <param name="ImmediateFlush" value="true"/>
+        <param name="Threshold" value="debug"/>
+        <param name="Append" value="true"/>
+
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %-5p [%c] %m%n"/>
+        </layout>
+    </appender>
+
+    <logger name="org.apache">
+        <level value="off"/>
+    </logger>
+
+    <logger name="org.hibernate">
+        <level value="off"/>
+    </logger>
+
+    <root>
+        <priority value="info"/>
+        <appender-ref ref="FILE" />
+        <appender-ref ref="CONSOLE" />
+    </root>
+
+</log4j:configuration>

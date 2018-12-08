@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="login" namespace="/" extends="struts-default">
+        <global-results>
+            <result name="error" type="redirectAction">
+                <param name="actionName">error</param>
+                <param name="namespace">/</param>
+            </result>
+            <result name="errors" type="redirectAction">
+                <param name="actionName">errors</param>
+                <param name="namespace">/</param>
+            </result>
+        </global-results>
+        <global-exception-mappings>
+            <exception-mapping exception="org.hibernate.exception.GenericJDBCException" result="error"/>
+            <exception-mapping exception="java.lang.Exception" result="error"/>
+        </global-exception-mappings>
+
+        <action name="login" class="login.web.LoginAction">
+            <result name="success" type="redirectAction">
+                <param name="actionName">loginSuccess</param>
+                <param name="namespace">/</param>
+            </result>
+            <result name="none" type="redirectAction">
+                <param name="actionName">loginSuccess</param>
+                <param name="namespace">/</param>
+            </result>
+            <result name="login" type="redirectAction">
+                <param name="actionName">login</param>
+                <param name="namespace">/</param>
+            </result>
+            <result name="input" type="redirectAction">
+                <param name="actionName">login</param>
+                <param name="namespace">/</param>
+            </result>
+        </action>
+    </package>
+
+    <package name="logout" namespace="/" extends="struts-default">
+        <action name="logout" class="login.web.LogoutAction">
+            <result name="login" type="redirectAction">
+                <param name="actionName">login</param>
+                <param name="namespace">/</param>
+            </result>
+            <result name="input" type="redirectAction">
+                <param name="actionName">login</param>
+                <param name="namespace">/</param>
+            </result>
+        </action>
+
+    </package>
+</struts>
