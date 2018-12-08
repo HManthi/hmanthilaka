@@ -3,8 +3,6 @@ package login.web;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
-import common.domain.Admin;
-import common.domain.RoleEnum;
 import login.service.LoginService;
 import login.service.LoginServiceImpl;
 import org.apache.commons.lang3.StringUtils;
@@ -36,12 +34,28 @@ public class LoginAction extends ActionSupport implements ModelDriven<User> {
 	@Override
 	public String execute() throws Exception {
 
-		if(user.getUserName().equals("a") && user.getPassword().equals("a")) {
+		User loginUser = loginService.authenticateUser(user);
+
+		if (loginUser != null) {
+			LOG.info(loginUser.getUserName() + " - successfully logged in");
+
+			Map session = ActionContext.getContext().getSession();
+			session.put("userName", loginUser.getUserName());
+			session.put("password", loginUser.getPassword());
+			session.put("roleId", loginUser.getRoleId());
 
 			return SUCCESS;
-		} else {
-			return ERROR;
 		}
+
+		return LOGIN;
+
+
+//		if(user.getUserName().equals("a") && user.getPassword().equals("a")) {
+//
+//			return SUCCESS;
+//		} else {
+//			return ERROR;
+//		}
 	}
 
 	public String authenticate() {

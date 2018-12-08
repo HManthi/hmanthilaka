@@ -1,40 +1,38 @@
 package common.util;
 
+import org.apache.log4j.Logger;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.service.ServiceRegistry;
 
 public class HibernateUtil {
+
+	private static Logger LOG = Logger.getLogger(HibernateUtil.class);
+
 	  private static StandardServiceRegistry registry;
 	  private static SessionFactory sessionFactory;
 
 	  public static SessionFactory getSessionFactory() {
-	    if (sessionFactory == null) {
-	      try {
-	        // Create registry
-	        registry = new StandardServiceRegistryBuilder()
-	            .configure()
-	            .build();
+	  	try {
+			Configuration configuration = new Configuration();
+			configuration.configure("hibernate.cfg.xml")
+			.addResource("usermanagement/domain/user.hbm.xml")
+			;
 
-	        // Create MetadataSources
-	        MetadataSources sources = new MetadataSources(registry);
+			ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties()).build();
 
-	        // Create Metadata
-	        Metadata metadata = sources.getMetadataBuilder().build();
-
-	        // Create SessionFactory
-	        sessionFactory = metadata.getSessionFactoryBuilder().build();
-
-	      } catch (Exception e) {
-	        e.printStackTrace();
-	        if (registry != null) {
-	          StandardServiceRegistryBuilder.destroy(registry);
-	        }
-	      }
-	    }
-	    return sessionFactory;
+			if (sessionFactory == null) {
+				sessionFactory = configuration.buildSessionFactory(serviceRegistry);
+			}
+			return sessionFactory;
+		} catch (Throwable ex){
+	  		LOG.error("Initial session factory creation failed.");
+	  		throw new ExceptionInInitializerError(ex);
+	  	}
 	  }
 	  
 //	  private static final SessionFactory sessionFactory = buildSessionFactory();
