@@ -8,32 +8,31 @@
     <constant name="struts.devMode" value="false"/>
 
     <package name="default" namespace="/" extends="struts-default">
-        <!--<global-results>-->
-            <!--<result name="error" type="redirectAction">-->
-                <!--<param name="actionName">error</param>-->
-                <!--<param name="namespace">/</param>-->
-            <!--</result>-->
-            <!--<result>-->
-                <!--<param name="actionName">errors</param>-->
-                <!--<param name="namespace">/</param>-->
-            <!--</result>-->
-        <!--</global-results>-->
-        <!--<global-exception-mappings>-->
-            <!--<exception-mapping exception="org.hibernate.exception.GenericJDBCException" result="error"/>-->
-            <!--<exception-mapping exception="java.lang.Exception" result="error"/>-->
-        <!--</global-exception-mappings>-->
+        <global-results>
+            <result name="error" type="redirectAction">
+                <param name="actionName">error</param>
+                <param name="namespace">/</param>
+            </result>
+            <result>
+                <param name="actionName">errors</param>
+                <param name="namespace">/</param>
+            </result>
+        </global-results>
+        <global-exception-mappings>
+            <exception-mapping exception="org.hibernate.exception.GenericJDBCException" result="error"/>
+            <exception-mapping exception="java.lang.Exception" result="error"/>
+        </global-exception-mappings>
 
-        <!--<action name="error">-->
-            <!--<result>/error.jsp</result>-->
-        <!--</action>-->
+        <action name="error">
+            <result>/error.jsp</result>
+        </action>
 
-        <!--<action name="errors">-->
-            <!--<result>/error.jsp</result>-->
-        <!--</action>-->
+        <action name="errors">
+            <result>/error.jsp</result>
+        </action>
 
-        <action name="login" class="login.web.LoginAction">
-            <result name="success">/loginSuccess.jsp</result>
-            <result name="error">/error.jsp</result>
+        <action name="index" class="login.web.LoginAction">
+            <result name="success">/formLogin.jsp</result>
         </action>
     </package>
     

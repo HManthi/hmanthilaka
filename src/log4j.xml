@@ -2,8 +2,8 @@
 <!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
 <log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
 
-    <appender name="FILE" class="org.apache.log4j.DailyRollingFileAppender">
-        <param name="File" value="${app.home}/logs/fleetmanagement.log"/>
+    <appender name="file" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="file" value="${catalina.home}/logs/fleetmanagement.log"/>
         <param name="DatePattern" value="'.'yyyy-MM-dd"/>
         <param name="ImmediateFlush" value="true"/>
         <param name="Threshold" value="debug"/>
@@ -24,7 +24,7 @@
 
     <root>
         <priority value="info"/>
-        <appender-ref ref="FILE" />
+        <appender-ref ref="file" />
         <appender-ref ref="CONSOLE" />
     </root>
 

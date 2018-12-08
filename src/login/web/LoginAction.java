@@ -6,13 +6,14 @@ import com.opensymphony.xwork2.ModelDriven;
 import login.service.LoginService;
 import login.service.LoginServiceImpl;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.log4j.Logger;
 import usermanagement.domain.User;
 
 import java.util.Map;
-import java.util.logging.Logger;
+
 
 public class LoginAction extends ActionSupport implements ModelDriven<User> {
-	private static Logger LOG = Logger.getLogger(LoginAction.class.getName());
+	private static Logger LOG = Logger.getLogger(LoginAction.class);
 
 	private LoginService loginService;
 	private User user = new User();
@@ -33,8 +34,13 @@ public class LoginAction extends ActionSupport implements ModelDriven<User> {
 
 	@Override
 	public String execute() throws Exception {
+		LOG.info("login execute action");
+         return SUCCESS;
+	}
 
+	public String userLogin() {
 		User loginUser = loginService.authenticateUser(user);
+		LOG.info("User name n pwd = " + user.getUserName() + " - " + user.getPassword());
 
 		if (loginUser != null) {
 			LOG.info(loginUser.getUserName() + " - successfully logged in");
@@ -48,14 +54,6 @@ public class LoginAction extends ActionSupport implements ModelDriven<User> {
 		}
 
 		return LOGIN;
-
-
-//		if(user.getUserName().equals("a") && user.getPassword().equals("a")) {
-//
-//			return SUCCESS;
-//		} else {
-//			return ERROR;
-//		}
 	}
 
 	public String authenticate() {
