@@ -14,9 +14,9 @@ public class LogoutAction extends ActionSupport {
 		Map session = ActionContext.getContext().getSession();
 		LOG.info(session.get("username") + " did logout from the system");
 
-		session.remove("username");
-		session.remove("role");
-		session.remove("user");
+		session.remove("userName");
+		session.remove("roleId");
+		session.remove("password");
 		return LOGIN;
 	}
 }

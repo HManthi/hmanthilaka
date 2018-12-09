@@ -21,12 +21,12 @@
 
         <action name="login" class="login.web.LoginAction" method="userLogin">
             <!--<result name="success" type="redirectAction">-->
-                <!--<param name="actionName">homePageAccess</param>-->
+                <!--<param name="actionName">userManagement</param>-->
                 <!--<param name="namespace">/</param>-->
             <!--</result>-->
-            <result name="success">/loginSuccess.jsp</result>
+            <result name="success">/homePage.jsp</result>
             <result name="none" type="redirectAction">
-                <param name="actionName">homePageAccess</param>
+                <param name="actionName">index</param>
                 <param name="namespace">/</param>
             </result>
             <result name="login" type="redirectAction">

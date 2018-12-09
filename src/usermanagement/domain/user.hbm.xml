@@ -20,12 +20,32 @@
         <property column="email" name="email" type="java.lang.String" />
     </class>
 
-        <sql-query name="getAuthenticateUser">
-                <return class="User" alias="ud"/>
-                SELECT
-                    ud.*
-                  FROM transport_hub.user_detail ud
-                    WHERE (ud.user_name = :userName)
-                    AND (ud.password = :password)
-        </sql-query>
+    <sql-query name="getAuthenticateUser">
+        <return class="User" alias="ud"/>
+            SELECT
+                ud.*
+              FROM transport_hub.user_detail ud
+              WHERE (ud.user_name = :userName)
+              AND (ud.password = :password)
+    </sql-query>
+
+    <sql-query name="addUser">
+        <![CDATA[
+        INSERT INTO
+            transport_hub.user_detail(
+              user_id,
+              user_name,
+              enc_password,
+              password,
+              first_name,
+              last_name,
+              contact_num,
+              role_id,
+              department_id,
+              branch_id,
+              birth_date,
+              email)
+  VALUES()
+        ]]>
+    </sql-query>
 </hibernate-mapping>
