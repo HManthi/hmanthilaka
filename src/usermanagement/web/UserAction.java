@@ -43,8 +43,19 @@ public class UserAction extends ActionSupport implements ServletRequestAware, Mo
 		return LOGIN;
 	}
 
-	public String addUser () {
+	public String userAdd () {
+		LOG.info("calling addUser method..");
+
 		Map session = ActionContext.getContext().getSession();
+		LOG.info("session.get(\"userName\")" + session.get("userName"));
+		LOG.info("userName" + getServletRequest().getParameter("userName"));
+		LOG.info("firstName" + getServletRequest().getParameter("firstName"));
+		LOG.info("password" + getServletRequest().getParameter("password"));
+		LOG.info("encpassword" + CommonUtil.getHash(getServletRequest().getParameter("password")));
+		LOG.info("email" + getServletRequest().getParameter("email"));
+		LOG.info("phone" + getServletRequest().getParameter("phone"));
+
+
 
 		if (session.get("userName") != null) {
 			newUser.setUserName(getServletRequest().getParameter("userName"));
@@ -55,7 +66,7 @@ public class UserAction extends ActionSupport implements ServletRequestAware, Mo
 //			newUser.setRoleId(Long.valueOf(getServletRequest().getParameter("roleId")));
 			newUser.setEmail(getServletRequest().getParameter("email"));
 			newUser.setPhone(getServletRequest().getParameter("phone"));
-			newUser.setBirthday(DateTimeUtil.parseDate(getServletRequest().getParameter("birthday"), "MM/dd/yyyy"));
+//			newUser.setBirthday(DateTimeUtil.parseDate(getServletRequest().getParameter("birthday"), "MM/dd/yyyy"));
 //			newUser.setDepartmentId(Long.valueOf(getServletRequest().getParameter("departmentId")));
 //			newUser.setBranchId(Long.valueOf(getServletRequest().getParameter("branchId")));
 

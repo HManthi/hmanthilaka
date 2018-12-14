@@ -16,10 +16,14 @@
 <s:div>
     <s:include value="menu.jsp"/>
     <s:div>
-       <s:form action="userAction!addUser.action">
-       <s:textfield name="name" label="UserName"></s:textfield>
-       <s:password name="password" label="Password"></s:password>
-       <s:textfield name="email" label="Email"></s:textfield>
+       <s:form action="userAdd" method="POST">
+
+       <s:textfield id="userName" label="User Name" key="userName"></s:textfield>
+       <s:textfield id="firstName" label="First Name" key="firstName"></s:textfield>
+       <s:textfield id="lastName" label="Last Name" key="lastName"></s:textfield>
+       <s:password id="password" label="Password" key="password"></s:password>
+       <s:textfield id="email" label="Email" key="email"></s:textfield>
+       <s:textfield id="phone" label="Contact No" key="phone"></s:textfield>
 
 
 
