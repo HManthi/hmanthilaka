@@ -18,7 +18,7 @@ import java.util.Map;
 import static com.opensymphony.xwork2.Action.SUCCESS;
 
 public class UserAction extends ActionSupport implements ServletRequestAware, ModelDriven {
-	public Logger LOG = Logger.getLogger(UserAction.class);
+	private Logger LOG = Logger.getLogger(UserAction.class);
 
 	private UserManager userManager = new UserManagerImpl();
 	private User newUser = new User();
@@ -47,13 +47,13 @@ public class UserAction extends ActionSupport implements ServletRequestAware, Mo
 		LOG.info("calling addUser method..");
 
 		Map session = ActionContext.getContext().getSession();
-		LOG.info("session.get(\"userName\")" + session.get("userName"));
-		LOG.info("userName" + getServletRequest().getParameter("userName"));
-		LOG.info("firstName" + getServletRequest().getParameter("firstName"));
-		LOG.info("password" + getServletRequest().getParameter("password"));
-		LOG.info("encpassword" + CommonUtil.getHash(getServletRequest().getParameter("password")));
-		LOG.info("email" + getServletRequest().getParameter("email"));
-		LOG.info("phone" + getServletRequest().getParameter("phone"));
+		LOG.info("session.get(\"userName\") = " + session.get("userName"));
+		LOG.info("userName = " + getServletRequest().getParameter("userName"));
+		LOG.info("firstName = " + getServletRequest().getParameter("firstName"));
+		LOG.info("password = " + getServletRequest().getParameter("password"));
+		LOG.info("encpassword = " + CommonUtil.getHash(getServletRequest().getParameter("password")));
+		LOG.info("email = " + getServletRequest().getParameter("email"));
+		LOG.info("phone = " + getServletRequest().getParameter("phone"));
 
 
 
