@@ -1,0 +1,94 @@
+
+
+<!DOCTYPE html>
+<%@ taglib prefix="s" uri="/struts-tags"%>
+
+<html lang="en" class="no-js">
+    <title>Registration Form</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Vehical Management System</title>
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>     
+	<body>
+		<div class="container">
+			<ul id="gn-menu" class="gn-menu-main">
+				<li class="gn-trigger">
+					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+					<nav class="gn-menu-wrapper">
+						<div class="gn-scroller">
+							<ul class="gn-menu">
+								<li><a class="gn-icon gn-icon-download" href="formRegister.jsp">Registration Form</a></li>
+                                                                <li><a class="gn-icon gn-icon-cog">Tittle 02</a></li>
+                                                                <li><a class="gn-icon gn-icon-cog">Tittle 03</a></li>
+								<li><a class="gn-icon gn-icon-cog">Tittle 04</a></li>
+								<li><a class="gn-icon gn-icon-help">Tittle 05</a></li>
+								<li><a class="gn-icon gn-icon-archive">Tittle 06</a></li>
+                                                                <li><a class="gn-icon gn-icon-cog">Tittle 07</a></li>
+                                                                <li><a class="gn-icon gn-icon-cog">Tittle 08</a></li>
+                                                                <li><a class="gn-icon gn-icon-cog">Tittle 09</a></li>
+                                                                <li><a class="gn-icon gn-icon-cog">Tittle 10</a></li>
+                                                                <li><a class="gn-icon gn-icon-archive">Tittle 11</a></li>
+                                                                <li><a class="gn-icon gn-icon-cog">Tittle 12</a></li>
+                                                                <li><a class="gn-icon gn-icon-cog">Tittle 13</a></li>
+                                                                <li><a class="gn-icon gn-icon-cog">Tittle 14</a></li>
+                                                                
+                                                                
+							</ul>
+						</div><!-- /gn-scroller -->
+					</nav>
+				</li>
+				<li><a><span>Welcome</span></a></li>
+				<li><a class="codrops-icon codrops-icon-drop" href=""><span>Vehical Management System</span></a></li>
+			</ul>
+                            
+                  	<header>
+                             <center>
+                            <h1>Registration Form</h1>
+                            <br><br>
+    <form action="register" method="post">
+        <table cellpadding="3pt">
+            <tr>
+                <td>User Name :</td>
+                <td><input type="text" name="userName" size="30" /></td>
+            </tr>
+            <tr>
+                <td>Password :</td>
+                <td><input type="password" name="password" size="30" /></td>
+            </tr>
+
+            <tr>
+                <td>email :</td>
+                <td><input type="text" name="email" size="30" /></td>
+            </tr>
+            <tr>
+                <td>Phone :</td>
+                <td><input type="text" name="phone" size="30" /></td>
+            </tr>
+			<tr>
+				<td></td>
+			</tr>
+
+		</table>
+        <p />
+        <input type="submit" value="Register" />
+    </form>
+                            </center>
+			</header> 
+        	</div><!-- /container -->
+        
+                
+                
+		<script src="js/classie.js"></script>
+		<script src="js/gnmenu.js"></script>
+		<script>
+			new gnMenu( document.getElementById( 'gn-menu' ) );
+		</script>
+	</body>
+</html>
