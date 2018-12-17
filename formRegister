@@ -52,24 +52,24 @@
                              <center>
                             <h1>Registration Form</h1>
                             <br><br>
-    <form action="register" method="post">
+    <s:form action="register" method="post">
         <table cellpadding="3pt">
             <tr>
                 <td>User Name :</td>
-                <td><input type="text" name="userName" size="30" /></td>
+                <td><s:textfield name="userName" size="30"></s:textfield></td>
             </tr>
             <tr>
                 <td>Password :</td>
-                <td><input type="password" name="password" size="30" /></td>
+                <td><s:password name="password" name="password" size="30"></s:password></td>
             </tr>
 
             <tr>
                 <td>email :</td>
-                <td><input type="text" name="email" size="30" /></td>
+                <td><s:textfield name="email" size="30"></s:textfield></td>
             </tr>
             <tr>
                 <td>Phone :</td>
-                <td><input type="text" name="phone" size="30" /></td>
+                <td><s:textfield name="phone" size="30"></s:textfield></td>
             </tr>
 			<tr>
 				<td></td>
@@ -77,8 +77,8 @@
 
 		</table>
         <p />
-        <input type="submit" value="Register" />
-    </form>
+        <s:submit value="Register"></s:submit>
+    </s:form>
                             </center>
 			</header> 
         	</div><!-- /container -->
