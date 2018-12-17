@@ -46,20 +46,23 @@
             <li><a><span>Welcome</span></a></li>
             <li><a class="codrops-icon codrops-icon-drop" href=""><span>Vehical Management System</span></a></li>
         </ul>
-
         <header>
-            <center>
-                <h1>User Registration Form</h1>
-            </center>
-                <br><br>
+                <h3>User Registration Form</h3>
+                 <br>
                 <form class="form-style-7" action="register" method="post">
                     <table cellpadding="3pt">
                         <tr>
-                            <td><label for="user name">User Name :</label></td>
+                            <td><label for="user name">UserName :</label></td>
                             <td><input type="text" name="userName" size="30" /></td>
                             <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
                             <td><label for="password">Password :</label></td>
                             <td><input type="password" name="password" size="30" /></td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td><label for="email">Email :</label></td>
+                            <td><input type="text" name="email" size="30" /></td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td><label for="phone">Phone :</label></td>
+                            <td><input type="text" name="phone" size="30" /></td>
                         </tr>
                          <tr>
                             <td></td>
@@ -67,15 +70,7 @@
                             <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
                             <td></td>
                             <td><span>Enter your password here</span></td>
-                        </tr>
-                        <tr>
-                            <td><label for="email">Email :</label></td>
-                            <td><input type="text" name="email" size="30" /></td>
                             <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                            <td><label for="phone">Phone :</label></td>
-                            <td><input type="text" name="phone" size="30" /></td>
-                        </tr>
-                        <tr>
                             <td></td>
                             <td><span>Enter your correct e-mail here</span></td>
                             <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
@@ -85,24 +80,20 @@
                         <tr>
                             <td><label for="role">Role :</label></td>
                             <td><input type="text" name="role" size="30" /></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><span>Enter your Role here</span></td>
-                        </tr>
-                        <tr>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
                             <td><label for="department">Department :</label></td>
                             <td><input type="text" name="department" size="30" /></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><span>Enter your Department here</span></td>
-                        </tr>
-                        <tr>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
                             <td><label for="branch">Branch :</label></td>
                             <td><input type="text" name="branch" size="30" /></td>
                         </tr>
                         <tr>
+                            <td></td>
+                            <td><span>Enter your Role here</span></td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td></td>
+                            <td><span>Enter your Department here</span></td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
                             <td></td>
                             <td><span>Enter your Branch name here</span></td>
                         </tr>
@@ -116,11 +107,55 @@
                     <input type="submit" value="Register" />
                     </center>
                 </form>
+                 
+                 <h4>User Details</h4>
+                 <br>
+                 <table cellpadding="3pt">
+                        <tr>
+                            <td><label for="show">Show</label></td>
+                            <td><select>
+                                    <option value="volvo">10</option>
+                                    <option value="saab">30</option>
+                                    <option value="mercedes">50</option>
+                                    <option value="audi">100</option>
+                                </select>
+                            </td>
+                            <td>entries</td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td><label for="phone">Search :</label></td>
+                            <td><input type="text" name="search" size="20" /></td>
+                        </tr>
+                         </table>
+                 <br>
+                 
+                 <form class="form-style-7">
+                 <table cellpadding="3pt" width="100%" border="1">
+                        <tr>
+                            <th><label for="user name">UserName </label></th>
+                            <th><label for="password">Password </label></th>
+                            <th><label for="email">Email </label></th>
+                            <th><label for="phone">Phone </label></th>
+                            <th><label for="role">Role </label></th>
+                            <th><label for="department">Department </label></th>
+                            <th><label for="branch">Branch </label></th>
+                        </tr>
+                    </table>
+                 <br><br>
+                 <center>
+                     <input type="submit" value="Pevious" /> &nbsp;<input type="submit" value="Next" /> 
+                     
+                 </center>
+                 </form>
             
         </header> 
     </div><!-- /container -->
 
-
+    
 
     <script src="js/classie.js"></script>
     <script src="js/gnmenu.js"></script>
