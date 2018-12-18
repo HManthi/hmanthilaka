@@ -1,0 +1,152 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="s" uri="/struts-tags"%>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <title>Registration Form</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Vehicle Management System</title>
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link rel="stylesheet" type="text/css" href="css/formsCss.css"/>
+        <script src="js/modernizr.custom.js"></script>
+    </head>     
+    <body>
+        <div class="container">
+            <ul id="gn-menu" class="gn-menu-main">
+                <li class="gn-trigger">
+                    <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+                    <nav class="gn-menu-wrapper">
+                        <div class="gn-scroller">
+                            <ul class="gn-menu">
+                                <li><a class="gn-icon gn-icon-cog" href="accidentDetails.jsp">Accident Details</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="assignDrivers.jsp">Assign Driver</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="assignManager.jsp">Assign Manager</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="branchDetails.jsp">Branch Details</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="departmentDetails.jsp">Department Details</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="driverDetails.jsp">Driver Details</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="emissonDetails.jsp">Emisson Details</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="endTripDetails.jsp">End Trip Details</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="fuelStationDetails.jsp">Fuel Station Details</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="insuranceDetails.jsp">Insurance Details</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="leaveDetails.jsp">Leave Details</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="maintenanceDetails.jsp">Maintenance Details</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="navigationDetails.jsp">Navigation Details</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="requestFuel.jsp">Request Fuel</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="revenue.jsp">Revenue</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="roleDetails.jsp">Role Details</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="tripRequest.jsp">Trip Request</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="updateFuelStation.jsp">Update Fuel Station</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="vehicleRegistration.jsp">Vehicle Registration</a></li>
+
+
+                            </ul>
+                            <div><!-- /gn-scroller -->
+                                </nav>
+                                </li>
+                                <li><a><span>Welcome</span></a></li>
+                                <li><a class="codrops-icon codrops-icon-drop" href=""><span>Vehicle Management System</span></a></li>
+                                </ul>
+                                <header>
+                                    <h3>Enter Assign Driver Details</h3>
+                                    <br>
+                                    <form class="form-style-7" action="register" method="post">
+                                        <!--user data entries --> 
+                                        <table cellpadding="3pt">
+                                            <tr>
+                                                <td><label for="vehicleno">VehicleNo :</label></td>
+                                                <td>
+                                                    <div class="sel sel--black-panther">
+                                                        <select>
+                                                            <option value="vehicle">Select Vehicle</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                                <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                                <td><label for="driver">Driver :</label></td>
+                                                <td>
+                                                    <div class="sel sel--black-panther">
+                                                        <select>
+                                                            <option value="driver">Select Driver</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td><span>Enter vehicle no here</span></td>
+                                                <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                                <td></td>
+                                                <td><span>Enter driver here</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                            </tr>
+
+                                        </table>
+                                        <p />
+                                        <!--user data submit button --> 
+                                        <center>
+                                            <input type="submit" value="Save" />
+                                            <input type="submit" value="Clean" />
+                                        </center>
+                                        <br><br>
+                                    </form>
+
+                                    <hr>
+                                    <h4>Assign Details</h4>
+                                    <br>
+                                    <table cellpadding="3pt">
+                                        <tr>
+                                            <td><label for="show">Show</label></td>
+                                            <td><select>
+                                                    <option value="10">10</option>
+                                                    <option value="30">30</option>
+                                                    <option value="50">50</option>
+                                                    <option value="100">100</option>
+                                                </select>
+                                            </td>
+                                            <td>entries</td>
+                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                            <td><label for="search">Search :</label></td>
+                                            <td><input type="text" name="search" size="20" /></td>
+                                        </tr>
+                                    </table>
+                                    <br>
+
+                                    <form class="form-style-7">
+                                        <!-- saved user details from database --> 
+                                        <table cellpadding="3pt" width="100%" border="1">
+                                            <tr>
+                                                <th><label for="vehicleno">Vehicle</label></th>
+                                                <th><label for="driver">Driver </label></th>
+                                                <th><label for="edit">Edit </label></th>
+                                            </tr>
+                                        </table>
+                                        <br><br>
+                                        <center>
+                                            <input type="submit" value="Pevious" /> &nbsp;<input type="submit" value="Next" /> 
+                                        </center>
+                                    </form>
+
+                                </header> 
+                            </div><!-- /container -->
+
+
+
+                            <script src="js/classie.js"></script>
+                            <script src="js/gnmenu.js"></script>
+                            <script>
+                                new gnMenu(document.getElementById('gn-menu'));
+                            </script>
+                            </body>
+                            </html>
