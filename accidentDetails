@@ -41,6 +41,7 @@
                                 <li><a class="gn-icon gn-icon-cog" href="roleDetails.jsp">Role Details</a></li>
                                 <li><a class="gn-icon gn-icon-cog" href="tripRequest.jsp">Trip Request</a></li>
                                 <li><a class="gn-icon gn-icon-cog" href="updateFuelStation.jsp">Update Fuel Station</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="formRegister.jsp">User Details</a></li>
                                 <li><a class="gn-icon gn-icon-cog" href="vehicleRegistration.jsp">Vehicle Registration</a></li>
 
 
