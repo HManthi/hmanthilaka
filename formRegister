@@ -7,7 +7,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>Vehical Management System</title>
+        <title>Vehicle Management System</title>
         <link rel="shortcut icon" href="../favicon.ico">
         <link rel="stylesheet" type="text/css" href="css/normalize.css" />
         <link rel="stylesheet" type="text/css" href="css/demo.css" />
@@ -23,20 +23,25 @@
                     <nav class="gn-menu-wrapper">
                         <div class="gn-scroller">
                             <ul class="gn-menu">
-                                <li><a class="gn-icon gn-icon-download" href="formRegister.jsp">Registration Form</a></li>
-                                <li><a class="gn-icon gn-icon-cog">Tittle 02</a></li>
-                                <li><a class="gn-icon gn-icon-cog">Tittle 03</a></li>
-                                <li><a class="gn-icon gn-icon-cog">Tittle 04</a></li>
-                                <li><a class="gn-icon gn-icon-help">Tittle 05</a></li>
-                                <li><a class="gn-icon gn-icon-archive">Tittle 06</a></li>
-                                <li><a class="gn-icon gn-icon-cog">Tittle 07</a></li>
-                                <li><a class="gn-icon gn-icon-cog">Tittle 08</a></li>
-                                <li><a class="gn-icon gn-icon-cog">Tittle 09</a></li>
-                                <li><a class="gn-icon gn-icon-cog">Tittle 10</a></li>
-                                <li><a class="gn-icon gn-icon-archive">Tittle 11</a></li>
-                                <li><a class="gn-icon gn-icon-cog">Tittle 12</a></li>
-                                <li><a class="gn-icon gn-icon-cog">Tittle 13</a></li>
-                                <li><a class="gn-icon gn-icon-cog">Tittle 14</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="accidentDetails.jsp">Accident Details</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="assignDrivers.jsp">Assign Driver</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="assignManager.jsp">Assign Manager</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="branchDetails.jsp">Branch Details</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="departmentDetails.jsp">Department Details</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="driverDetails.jsp">Driver Details</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="emissonDetails.jsp">Emisson Details</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="endTripDetails.jsp">End Trip Details</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="fuelStationDetails.jsp">Fuel Station Details</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="insuranceDetails.jsp">Insurance Details</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="leaveDetails.jsp">Leave Details</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="maintenanceDetails.jsp">Maintenance Details</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="navigationDetails.jsp">Navigation Details</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="requestFuel.jsp">Request Fuel</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="revenue.jsp">Revenue</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="roleDetails.jsp">Role Details</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="tripRequest.jsp">Trip Request</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="updateFuelStation.jsp">Update Fuel Station</a></li>
+                                <li><a class="gn-icon gn-icon-cog" href="vehicleRegistration.jsp">Vehicle Registration</a></li>
 
 
                             </ul>
@@ -44,7 +49,7 @@
                                 </nav>
                                 </li>
                                 <li><a><span>Welcome</span></a></li>
-                                <li><a class="codrops-icon codrops-icon-drop" href=""><span>Vehical Management System</span></a></li>
+                                <li><a class="codrops-icon codrops-icon-drop" href=""><span>Vehicle Management System</span></a></li>
                                 </ul>
                                 <header>
                                     <h3>User Registration Form</h3>
@@ -86,7 +91,14 @@
                                                 <td><input type="text" name="department" size="30" /></td>
                                                 <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                                 <td><label for="branch">Branch :</label></td>
-                                                <td><input type="text" name="branch" size="30" /></td>
+                                                <td>
+                                                    <select>
+                                                        <option value="colombo7">Colombo 07</option>
+                                                        <option value="colombo6">Colombo 06</option>
+                                                        <option value="kandy">Kandy</option>
+                                                        <option value="colombo5">Colombo 05</option>
+                                                    </select>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td></td>
@@ -107,19 +119,20 @@
                                         <!--user data submit button --> 
                                         <center>
                                             <input type="submit" value="Register" />
-                                        </center>
+                                        </center> <br><br>
                                     </form>
 
+                                    <hr>
                                     <h4>User Details</h4>
                                     <br>
                                     <table cellpadding="3pt">
                                         <tr>
                                             <td><label for="show">Show</label></td>
                                             <td><select>
-                                                    <option value="volvo">10</option>
-                                                    <option value="saab">30</option>
-                                                    <option value="mercedes">50</option>
-                                                    <option value="audi">100</option>
+                                                    <option value="10">10</option>
+                                                    <option value="30">30</option>
+                                                    <option value="50">50</option>
+                                                    <option value="100">100</option>
                                                 </select>
                                             </td>
                                             <td>entries</td>
