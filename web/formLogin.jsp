@@ -13,31 +13,24 @@
 </head>
 
 <body onload="noBack();" onpageshow="if (event.persisted) noBack();" onunload="" class="login" data-page="login">
-<s:div cssClass="container" id="login-block">
-    <s:div cssClass="row">
-        <s:div cssClass="col-sm-6 col-md-4 col-sm-offset-3 col-md-offset-4">
-            <s:div cssClass="login-box clearfix">
-                <s:div cssClass="login-logo">
+<s:div id="login-block">
+    <s:div>
+        <s:div>
+            <s:div>
+                <s:div>
 
                     <hr>
-                        <s:div cssClass="login-form">
+                        <s:div>
                             <s:form id="login-form" action="login" method="POST">
-                            <s:textfield id="userName" placeHolder="Username" key="userName" cssClass="input-field form-control user"></s:textfield>
-                            <s:password id="password" placeHolder="Password" key="password" cssClass="input-field form-control password"></s:password>
-                            <s:submit cssClass="btn btn-login" value="Login" method="execute"></s:submit>
+                              <s:textfield id="userName" placeHolder="Username" key="userName"></s:textfield>
+                              <s:password id="password" placeHolder="Password" key="password"></s:password>
+                              <s:submit value="Login" method="userLogin"></s:submit>
                             </s:form>
                         </s:div>
                 </s:div>
             </s:div>
         </s:div>
     </s:div>
-
-
-
 </s:div>
-
-
-
-
 </body>
 </html>

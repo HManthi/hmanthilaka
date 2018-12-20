@@ -3,18 +3,17 @@ package login.web;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
-import common.domain.Admin;
-import common.domain.RoleEnum;
 import login.service.LoginService;
 import login.service.LoginServiceImpl;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.log4j.Logger;
 import usermanagement.domain.User;
 
 import java.util.Map;
-import java.util.logging.Logger;
+
 
 public class LoginAction extends ActionSupport implements ModelDriven<User> {
-	private static Logger LOG = Logger.getLogger(LoginAction.class.getName());
+	private static Logger LOG = Logger.getLogger(LoginAction.class);
 
 	private LoginService loginService;
 	private User user = new User();
@@ -35,13 +34,26 @@ public class LoginAction extends ActionSupport implements ModelDriven<User> {
 
 	@Override
 	public String execute() throws Exception {
+		LOG.info("login execute action");
+         return SUCCESS;
+	}
 
-		if(user.getUserName().equals("a") && user.getPassword().equals("a")) {
+	public String userLogin() {
+		User loginUser = loginService.authenticateUser(user);
+		LOG.info("User name n pwd = " + user.getUserName() + " - " + user.getPassword());
+
+		if (loginUser != null) {
+			LOG.info(loginUser.getUserName() + " - successfully logged in");
+
+			Map session = ActionContext.getContext().getSession();
+			session.put("userName", loginUser.getUserName());
+			session.put("password", loginUser.getPassword());
+			session.put("roleId", loginUser.getRoleId());
 
 			return SUCCESS;
-		} else {
-			return ERROR;
 		}
+
+		return LOGIN;
 	}
 
 	public String authenticate() {

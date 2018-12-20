@@ -1,12 +1,15 @@
 package usermanagement.domain;
 
+import common.domain.AbstractBaseEntity;
+
 import java.io.Serializable;
 import java.util.Date;
 
-public class User implements Serializable {
+public class User extends AbstractBaseEntity {
 
 	private Long userId;
     private String userName;
+    private String encPassword;
     private String password;
     private Long roleId;
     private String firstName;
@@ -19,10 +22,11 @@ public class User implements Serializable {
 
 	private String role;
     
-    public User(String userName, String password, Long roleId, String firstName, String lastName, String email,
+    public User(String userName, String encPassword, String password, Long roleId, String firstName, String lastName, String email,
 			String phone, Date birthday, Long departmentId, Long branchId) {
 		super();
 		this.userName = userName;
+		this.encPassword = encPassword;
 		this.password = password;
 		this.roleId = roleId;
 		this.firstName = firstName;
@@ -37,9 +41,10 @@ public class User implements Serializable {
 	public User() {
 	}
 
-	public User(String userName, String password) {
+	public User(String userName, String password, Long roleId) {
 		this.userName = userName;
 		this.password = password;
+		this.roleId = roleId;
 	}
 
 	public User(String userName, String password, String name) {
@@ -48,6 +53,10 @@ public class User implements Serializable {
 		this.firstName = name;
 	}
 
+	@Override
+	public Object getEntityId() {
+		return getUserId();
+	}
 	public Long getUserId() {
 		return userId;
 	}
@@ -62,8 +71,16 @@ public class User implements Serializable {
     public void setUserName(String userName) {
         this.userName = userName;
     }
- 
-    public String getPassword() {
+
+	public String getEncPassword() {
+		return encPassword;
+	}
+
+	public void setEncPassword(String encPassword) {
+		this.encPassword = encPassword;
+	}
+
+	public String getPassword() {
         return password;
     }
  

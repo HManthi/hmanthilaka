@@ -2,20 +2,31 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
-<hibernate-mapping>
-<class name="usermanagement.domain.User" table="USER_DETAIL">
-        <id column="USER_ID" name="userId" type="java.lang.Long">
+<hibernate-mapping package="usermanagement.domain">
+
+    <class name="User" table="user_detail">
+        <id column="user_id" name="userId" type="java.lang.Long">
         	<generator class="increment"/>
         </id>
-        <property column="USER_NAME" name="userName" type="java.lang.String" />
-        <property column="FIRST_NAME" name="firstName" type="java.lang.String" />
-        <property column="LAST_NAME" name="lastName" type="java.lang.String" />
-        <property column="CONTACT_NUM" name="phone" type="java.lang.String" />
-        <property column="ROLE_ID" name="roleId" type="java.lang.Long" />
-        <property column="DEPARTMENT_ID" name="departmentId" type="java.lang.Long" />
-        <property column="BRANCH_ID" name="branchId" type="java.lang.Long" />
-        <property column="PASSWORD" name="password" type="java.lang.String" />
-        <property column="BIRTH_DATE" name="birthday" type="java.lang.String" />
-        <property column="EMAIL" name="email" type="java.lang.String" />
-</class>
+        <property column="user_name" name="userName" type="java.lang.String" />
+        <property column="enc_password" name="encPassword" type="java.lang.String" />
+        <property column="first_name" name="firstName" type="java.lang.String" />
+        <property column="last_name" name="lastName" type="java.lang.String" />
+        <property column="contact_num" name="phone" type="java.lang.String" />
+        <property column="role_id" name="roleId" type="java.lang.Long" />
+        <property column="department_id" name="departmentId" type="java.lang.Long" />
+        <property column="branch_id" name="branchId" type="java.lang.Long" />
+        <property column="password" name="password" type="java.lang.String" />
+        <property column="birth_date" name="birthday" type="java.util.Date" />
+        <property column="email" name="email" type="java.lang.String" />
+    </class>
+
+    <sql-query name="getAuthenticateUser">
+        <return class="User" alias="ud"/>
+            SELECT
+                ud.*
+              FROM transport_hub.user_detail ud
+              WHERE (ud.user_name = :userName)
+              AND (ud.password = :password)
+    </sql-query>
 </hibernate-mapping>
