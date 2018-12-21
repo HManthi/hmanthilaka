@@ -16,11 +16,11 @@
             <s:div class="container">
 			<ul id="gn-menu" class="gn-menu-main">
 				<li class="gn-trigger">
-					<s:a class="gn-icon gn-icon-menu"><span>Menu</span></s:a>
-					<nav class="gn-menu-wrapper">
-						<s:div class="gn-scroller">
-							<ul class="gn-menu">
-								<li><s:a class="gn-icon gn-icon-cog" href="accidentDetails.jsp">Accident Details</s:a></li>
+					<s:a class="gn-icon gn-icon-menu">MENU</s:a>
+					
+                                            <s:div class="gn-scroller">
+                                <ul class="gn-menu">
+                                <li><s:a class="gn-icon gn-icon-cog" href="accidentDetails.jsp">Accident Details</s:a></li>
                                 <li><s:a class="gn-icon gn-icon-cog" href="assignDrivers.jsp">Assign Driver</s:a></li>
                                 <li><s:a class="gn-icon gn-icon-cog" href="assignManager.jsp">Assign Manager</s:a></li>
                                 <li><s:a class="gn-icon gn-icon-cog" href="branchDetails.jsp">Branch Details</s:a></li>
@@ -38,11 +38,11 @@
                                 <li><s:a class="gn-icon gn-icon-cog" href="roleDetails.jsp">Role Details</s:a></li>
                                 <li><s:a class="gn-icon gn-icon-cog" href="tripRequest.jsp">Trip Request</s:a></li>
                                 <li><s:a class="gn-icon gn-icon-cog" href="updateFuelStation.jsp">Update Fuel Station</s:a></li>
-                                <li><s:a class="gn-icon gn-icon-cog" href="formRegister.jsp">User Details</s:a></li>
+                                <li><s:a class="gn-icon gn-icon-cog" href="formUser.jsp">User Details</s:a></li>
                                 <li><s:a class="gn-icon gn-icon-cog" href="vehicleRegistration.jsp">Vehicle Registration</s:a></li>
 							</ul>
 						</s:div><!-- /gn-scroller -->
-					</nav>
+					
 				</li>
 				<li><s:a><span>Welcome</span></s:a></li>
 				<li><s:a class="codrops-icon codrops-icon-drop"><span>Vehicle Management System</span></s:a></li>
