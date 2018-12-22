@@ -27,38 +27,35 @@
             <br>
             <s:div>
                     <s:form class="form-style-7" action="register" method="post">
-                    <s:textfield id="vehicleno" label="VehicleNo " key="vehicleno" ></s:textfield>
+                    <s:textfield id="vehicleNo" label="VehicleNo " key="vehicleNo" ></s:textfield>
                     <s:textfield id="driver" label="Driver" key="driver"></s:textfield>
                     <s:textfield id="reason" label="Reason" key="reason"></s:textfield>
                     <s:textfield id="cost" label="Cost" key="cost"></s:textfield>
                     <s:textfield id="location" label="Location" key="Location"></s:textfield>
-                    <s:textfield id="claimamount" label="Claim Amount" key="claimamount"></s:textfield>
-                    <s:submit value="Save"></s:submit>
+                    <s:textfield id="claimAmount" label="Claim Amount" key="claimAmount"></s:textfield>
                   </s:form>   
                     <br>
-                <s:submit value="Clean"></s:submit>
+                    <s:form theme="simple">
+                <s:submit value="Save"></s:submit><s:submit value="Clean"></s:submit>
+                    </s:form>
             </s:div>   
             <hr>
             <h4>Accident Details</h4>
 
             <br>
-            <p><s:label for="show">Show</s:label>&nbsp;<select>
-                        <option value="10">10</option>
-                        <option value="50">50</option>
-                        <option value="100">100</option>
-                    </select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="search" label="Search" key="search"></s:textfield></p>
+            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="search" label="Search" key="search"></s:textfield></p>
 
             <br>
             <s:form theme="simple">
                 <table border="1" width="60%">
                     <thead>
                         <tr>
-                            <th><s:label for="vehicleno">Vehicle No</s:label></th>
+                            <th><s:label for="vehicleNo">Vehicle No</s:label></th>
                             <th><s:label for="driver">Driver</s:label></th>
                             <th><s:label for="reason">Reason</s:label></th>
                             <th><s:label for="cost">Cost</s:label></th>
                             <th><s:label for="location">Location</s:label></th>
-                            <th><s:label for="claimamount">Claim Amount</s:label></th>
+                            <th><s:label for="claimAmount">Claim Amount</s:label></th>
                             <th><s:label for="edit">Edit</s:label></th>
                         </tr>
                     </thead>
