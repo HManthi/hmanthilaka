@@ -17,12 +17,6 @@
     </head>
 
 <body onload="noBack();" onpageshow="if (event.persisted) noBack();" onunload="">
-    <s:div class="container">
-        <header>
-            <h3>User Registration Form</h3>
-        </header>
-    </s:div>
-
      <script src="js/classie.js"></script>
      <script src="js/gnmenu.js"></script>
      <script>
