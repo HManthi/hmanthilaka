@@ -20,32 +20,32 @@
 					
                                             <s:div class="gn-scroller">
                                 <ul class="gn-menu">
-                                <li><s:a class="gn-icon gn-icon-cog" href="accidentDetails.jsp">Accident Details</s:a></li>
-                                <li><s:a class="gn-icon gn-icon-cog" href="assignDrivers.jsp">Assign Driver</s:a></li>
-                                <li><s:a class="gn-icon gn-icon-cog" href="assignManager.jsp">Assign Manager</s:a></li>
-                                <li><s:a class="gn-icon gn-icon-cog" href="branchDetails.jsp">Branch Details</s:a></li>
-                                <li><s:a class="gn-icon gn-icon-cog" href="departmentDetails.jsp">Department Details</s:a></li>
-                                <li><s:a class="gn-icon gn-icon-cog" href="driverDetails.jsp">Driver Details</s:a></li>
-                                <li><s:a class="gn-icon gn-icon-cog" href="emissonDetails.jsp">Emisson Details</s:a></li>
-                                <li><s:a class="gn-icon gn-icon-cog" href="endTripDetails.jsp">End Trip Details</s:a></li>
-                                <li><s:a class="gn-icon gn-icon-cog" href="fuelStationDetails.jsp">Fuel Station Details</s:a></li>
-                                <li><s:a class="gn-icon gn-icon-cog" href="insuranceDetails.jsp">Insurance Details</s:a></li>
-                                <li><s:a class="gn-icon gn-icon-cog" href="leaveDetails.jsp">Leave Details</s:a></li>
-                                <li><s:a class="gn-icon gn-icon-cog" href="maintenanceDetails.jsp">Maintenance Details</s:a></li>
-                                <li><s:a class="gn-icon gn-icon-cog" href="navigationDetails.jsp">Navigation Details</s:a></li>
-                                <li><s:a class="gn-icon gn-icon-cog" href="requestFuel.jsp">Request Fuel</s:a></li>
-                                <li><s:a class="gn-icon gn-icon-cog" href="revenue.jsp">Revenue</s:a></li>
-                                <li><s:a class="gn-icon gn-icon-cog" href="roleDetails.jsp">Role Details</s:a></li>
-                                <li><s:a class="gn-icon gn-icon-cog" href="tripRequest.jsp">Trip Request</s:a></li>
-                                <li><s:a class="gn-icon gn-icon-cog" href="updateFuelStation.jsp">Update Fuel Station</s:a></li>
-                                <li><s:a class="gn-icon gn-icon-cog" href="formUser.jsp">User Details</s:a></li>
-                                <li><s:a class="gn-icon gn-icon-cog" href="vehicleRegistration.jsp">Vehicle Registration</s:a></li>
+                                <li><s:a class="gn-icon gn-icon-cog" href="accidentDetails.jsp">&nbsp;&nbsp;<img src="images/accident_details.png" height="24" width="24"/>&nbsp;&nbsp;Accident Details</s:a></li>
+                                <li><s:a class="gn-icon gn-icon-cog" href="assignDrivers.jsp">&nbsp;&nbsp;<img src="images/user.png" height="24" width="24"/>&nbsp;&nbsp;Assign Driver</s:a></li>
+                                <li><s:a class="gn-icon gn-icon-cog" href="assignManager.jsp">&nbsp;&nbsp;<img src="images/manager.png" height="24" width="24"/>&nbsp;&nbsp;Assign Manager</s:a></li>
+                                <li><s:a class="gn-icon gn-icon-cog" href="branchDetails.jsp">&nbsp;&nbsp;<img src="images/branch.png" height="24" width="24"/>&nbsp;&nbsp;Branch Details</s:a></li>
+                                <li><s:a class="gn-icon gn-icon-cog" href="departmentDetails.jsp">&nbsp;&nbsp;<img src="images/department.png" height="24" width="24"/>&nbsp;&nbsp;Department Details</s:a></li>
+                                <li><s:a class="gn-icon gn-icon-cog" href="driverDetails.jsp">&nbsp;&nbsp;<img src="images/driver_details.png" height="24" width="24"/>&nbsp;&nbsp;Driver Details</s:a></li>
+                                <li><s:a class="gn-icon gn-icon-cog" href="emissonDetails.jsp">&nbsp;&nbsp;<img src="images/emission.png" height="24" width="24"/>&nbsp;&nbsp;Emisson Details</s:a></li>
+                                <li><s:a class="gn-icon gn-icon-cog" href="endTripDetails.jsp">&nbsp;&nbsp;<img src="images/endtrip.png" height="24" width="24"/>&nbsp;&nbsp;End Trip Details</s:a></li>
+                                <li><s:a class="gn-icon gn-icon-cog" href="fuelStationDetails.jsp">&nbsp;&nbsp;<img src="images/fuelstation.png" height="24" width="24"/>&nbsp;&nbsp;Fuel Station Details</s:a></li>
+                                <li><s:a class="gn-icon gn-icon-cog" href="insuranceDetails.jsp">&nbsp;&nbsp;<img src="images/ve_insuarance.png" height="24" width="24"/>&nbsp;&nbsp;Insurance Details</s:a></li>
+                                <li><s:a class="gn-icon gn-icon-cog" href="leaveDetails.jsp">&nbsp;&nbsp;<img src="images/leave.png" height="24" width="24"/>&nbsp;&nbsp;Leave Details</s:a></li>
+                                <li><s:a class="gn-icon gn-icon-cog" href="maintenanceDetails.jsp">&nbsp;&nbsp;<img src="images/maintain.png" height="24" width="24"/>&nbsp;&nbsp;Maintenance Details</s:a></li>
+                                <li><s:a class="gn-icon gn-icon-cog" href="navigationDetails.jsp">&nbsp;&nbsp;<img src="images/navigation.png" height="24" width="24"/>&nbsp;&nbsp;Navigation Details</s:a></li>
+                                <li><s:a class="gn-icon gn-icon-cog" href="requestFuel.jsp">&nbsp;&nbsp;<img src="images/req_fuel.png" height="24" width="24"/>&nbsp;&nbsp;Request Fuel</s:a></li>
+                                <li><s:a class="gn-icon gn-icon-cog" href="revenue.jsp">&nbsp;&nbsp;<img src="images/revenue.png" height="24" width="24"/>&nbsp;&nbsp;Revenue</s:a></li>
+                                <li><s:a class="gn-icon gn-icon-cog" href="roleDetails.jsp">&nbsp;&nbsp;<img src="images/role.png" height="24" width="24"/>&nbsp;&nbsp;Role Details</s:a></li>
+                                <li><s:a class="gn-icon gn-icon-cog" href="tripRequest.jsp">&nbsp;&nbsp;<img src="images/trip_req.png" height="24" width="24"/>&nbsp;&nbsp;Trip Request</s:a></li>
+                                <li><s:a class="gn-icon gn-icon-cog" href="updateFuelStation.jsp">&nbsp;&nbsp;<img src="images/fuelstation.png" height="24" width="24"/>&nbsp;&nbsp;Update Fuel Station</s:a></li>
+                                <li><s:a class="gn-icon gn-icon-cog" href="formUser.jsp">&nbsp;&nbsp;<img src="images/user_details.png" height="24" width="24"/>&nbsp;&nbsp;User Details</s:a></li>
+                                <li><s:a class="gn-icon gn-icon-cog" href="vehicleRegistration.jsp">&nbsp;&nbsp;<img src="images/vehicle_reg.png" height="24" width="24"/>&nbsp;&nbsp;Vehicle Registration</s:a></li>
 							</ul>
 						</s:div><!-- /gn-scroller -->
 					
 				</li>
 				<li><s:a><span>Welcome</span></s:a></li>
-				<li><s:a class="codrops-icon codrops-icon-drop"><span>Vehicle Management System</span></s:a></li>
+                                <li><s:a class="codrops-icon codrops-icon-drop" href="menu.jsp"><span>Vehicle Management System</span></s:a></li>
 			</ul>
                 </s:div><!-- /container -->
         
