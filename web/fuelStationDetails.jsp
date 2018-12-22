@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Emission Details</title>
+        <title>Fuel Station Details</title>
         <s:include value="menu.jsp"/>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,14 +26,14 @@
     <body onload="noBack();" onpageshow="if(event.persisted) noBack();" onunload="">
         <s:div>
         <center>
-            <h3>Enter Emission Details</h3>
+            <h3>Enter Fuel Station Details</h3>
             <br>
             <s:form>
-                <s:textfield id="vehicleNo" label="Vehicle No" key="vehicleNo"></s:textfield>
-                <s:select label="Company" list="{'ABC','DEF'}"></s:select>
-                <s:textfield id="serialNo" label="Serial No" key="serialNo"></s:textfield>
-                <s:select label="Status" list="{'AAA','BBB','CCC'}"></s:select>
-                <s:textfield id="validPeriod" label="Valid Period" key="validPeriod"></s:textfield>
+                <s:textfield id="stationName" label="Station Name" key="stationName"></s:textfield>
+                <s:textfield id="location" label="Locaion" key="location"></s:textfield>
+                <s:textfield id="owner" label="Owner" key="owner"></s:textfield>
+                <s:textfield id="contactNo" label="Contact No" key="contactNo"></s:textfield>
+                <s:textfield id="price" label="Price" key="price"></s:textfield>
                 
                 
             </s:form>
@@ -43,17 +43,17 @@
             </s:form>
                 <br>
                 <hr>
-                <h4>Emission Details</h4>
+                <h4>Fuel Station Details</h4>
                 
                 <s:form theme="simple">
                 <table border="1" width="60%">
                     <thead>
                         <tr>
-                            <th><s:label for="vehicleNo">Vehicle No</s:label></th>
-                            <th><s:label for="company">Company</s:label></th>
-                            <th><s:label for="serialNo">Serial No</s:label></th>
-                            <th><s:label for="status">Status</s:label></th>
-                            <th><s:label for="validPeriod">Valid Period</s:label></th>
+                            <th><s:label for="stationName">Station Name</s:label></th>
+                            <th><s:label for="location">Location</s:label></th>
+                            <th><s:label for="owner">Owner</s:label></th>
+                            <th><s:label for="contactNo">Contact No</s:label></th>
+                            <th><s:label for="price">Price</s:label></th>
                             <th><s:label for="edit">Edit</s:label></th>
                         </tr>
                     </thead>

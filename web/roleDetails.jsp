@@ -1,14 +1,9 @@
-<%-- 
-    Document   : assignDrivers
-    Created on : Dec 22, 2018, 1:06:03 PM
-    Author     : User
---%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Assign Drivers</title>
+        <title>Role Details</title>
         <s:include value="menu.jsp"/>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,39 +16,38 @@
         <link rel="stylesheet" type="text/css" href="css/component.css" />
         <link rel="stylesheet" type="text/css" href="css/positionCss.css" />
         <script src="js/modernizr.custom.js"></script>
+
+
     </head>
+
     <body onload="noBack();" onpageshow="if (event.persisted) noBack();" onunload="">
         <s:div>
         <center>
-            <h3>Assign Driver</h3>
+            <h3>Enter Role Details</h3>
             <br>
-            <s:form>
-                <table width="60%">
-                    <tbody>
-                        <tr>
-                            <td><s:textarea id="vehicleNo" label="Vehicle No" key="vehicleNo"></s:textarea></td>
-                        </tr>
-                        <tr>
-                            <td><s:textarea id="driver" label="Driver" key="driver"></s:textarea></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </s:form>
-            <br>
-            <s:form theme="simple">
-                <s:submit value="Previous"></s:submit>&nbsp;<s:submit value="Next"></s:submit>
-            </s:form>
+            <s:div>
+                  <s:form class="form-style-7" action="register" method="post">
+                    <s:textfield id="roleName" label="Role Name" key="roleName" ></s:textfield>
+                  </s:form>   
+                    <br>
+                    <s:form theme="simple">
+                <s:submit value="Save"></s:submit><s:submit value="Clean"></s:submit>
+                    </s:form>
+            </s:div>   
             <hr>
-            <br><br>
+            <h4>Role Details</h4>
+
+            <br>
             <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="search" label="Search" key="search"></s:textfield></p>
+
             <br>
             <s:form theme="simple">
                 <table border="1" width="60%">
                     <thead>
                         <tr>
-                            <th><s:label for="vehicle">Vehicle</s:label></th>
-                            <th><s:label for="driver">Driver</s:label></th>
+                            <th><s:label for="roleName">Role Name</s:label></th>
                             <th><s:label for="edit">Edit</s:label></th>
+                            <th><s:label for="remove">Remove</s:label></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -62,7 +56,9 @@
                         <br><br>
                             <s:submit value="Previous"></s:submit>&nbsp;<s:submit value="Next"></s:submit>
             </s:form>
-        </center>
-        </s:div>
-    </body>
+            
+        </center>             
+    </s:div>
+                        
+</body>
 </html>

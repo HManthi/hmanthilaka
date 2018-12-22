@@ -1,15 +1,14 @@
 <%-- 
-    Document   : branchDetails
-    Created on : Dec 22, 2018, 2:04:07 PM
+    Document   : assignManager
+    Created on : Dec 22, 2018, 1:36:38 PM
     Author     : User
 --%>
-
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Emission Details</title>
+        <titleAssign Manager</title>
         <s:include value="menu.jsp"/>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,44 +25,42 @@
     <body onload="noBack();" onpageshow="if(event.persisted) noBack();" onunload="">
         <s:div>
         <center>
-            <h3>Enter Emission Details</h3>
+            <h3>Assign Manager</h3>
             <br>
             <s:form>
+                <s:textfield id="manager" label="Manager" key="manager"></s:textfield>
                 <s:textfield id="vehicleNo" label="Vehicle No" key="vehicleNo"></s:textfield>
-                <s:select label="Company" list="{'ABC','DEF'}"></s:select>
-                <s:textfield id="serialNo" label="Serial No" key="serialNo"></s:textfield>
-                <s:select label="Status" list="{'AAA','BBB','CCC'}"></s:select>
-                <s:textfield id="validPeriod" label="Valid Period" key="validPeriod"></s:textfield>
-                
-                
+                <s:textfield id="driver" label="Driver" key="driver"></s:textfield>
+                <s:textfield id="contact" label="Contact" key="contact"></s:textfield>
             </s:form>
             <br>
             <s:form theme="simple">
-                <s:submit value="Save"></s:submit>&nbsp;<s:submit value="Clean"></s:submit>
+                <s:submit value="Save"></s:submit>&nbsp;<s:submit value="Clean"></s:submit> 
             </s:form>
                 <br>
                 <hr>
-                <h4>Emission Details</h4>
                 
+                <h4>Manager Details</h4>
+                <br>
                 <s:form theme="simple">
                 <table border="1" width="60%">
                     <thead>
                         <tr>
+                            <th><s:label for="manager">Manager</s:label></th>
                             <th><s:label for="vehicleNo">Vehicle No</s:label></th>
-                            <th><s:label for="company">Company</s:label></th>
-                            <th><s:label for="serialNo">Serial No</s:label></th>
-                            <th><s:label for="status">Status</s:label></th>
-                            <th><s:label for="validPeriod">Valid Period</s:label></th>
+                            <th><s:label for="driver">Driver</s:label></th>
+                            <th><s:label for="contact">Contact</s:label></th>
                             <th><s:label for="edit">Edit</s:label></th>
                         </tr>
                     </thead>
                     <tbody>
                     </tbody>
                 </table>
+                        <br><br>
+                            <s:submit value="Previous"></s:submit>&nbsp;<s:submit value="Next"></s:submit>
             </s:form>
-                
         </center>
         </s:div>
-        
     </body>
 </html>
+ 

@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Emission Details</title>
+        <title>End Trip Details</title>
         <s:include value="menu.jsp"/>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,14 +26,14 @@
     <body onload="noBack();" onpageshow="if(event.persisted) noBack();" onunload="">
         <s:div>
         <center>
-            <h3>Enter Emission Details</h3>
+            <h3>Enter End Trip Details</h3>
             <br>
             <s:form>
-                <s:textfield id="vehicleNo" label="Vehicle No" key="vehicleNo"></s:textfield>
-                <s:select label="Company" list="{'ABC','DEF'}"></s:select>
-                <s:textfield id="serialNo" label="Serial No" key="serialNo"></s:textfield>
-                <s:select label="Status" list="{'AAA','BBB','CCC'}"></s:select>
-                <s:textfield id="validPeriod" label="Valid Period" key="validPeriod"></s:textfield>
+                <s:textfield id="tripId" label="Trip ID" key="tripId"></s:textfield>
+                <s:textfield id="tripCost" label="Trip Cost" key="tripCost"></s:textfield>
+                <s:textfield id="startMileage" label="Start Mileage" key="startMileage"></s:textfield>
+                <s:textfield id="endtMileage" label="End Mileage" key="endMileage"></s:textfield>
+                <s:textfield id="endTime" label="End Time" key="endTime"></s:textfield>
                 
                 
             </s:form>
@@ -43,17 +43,17 @@
             </s:form>
                 <br>
                 <hr>
-                <h4>Emission Details</h4>
+                <h4>End Trip Details</h4>
                 
                 <s:form theme="simple">
                 <table border="1" width="60%">
                     <thead>
                         <tr>
-                            <th><s:label for="vehicleNo">Vehicle No</s:label></th>
-                            <th><s:label for="company">Company</s:label></th>
-                            <th><s:label for="serialNo">Serial No</s:label></th>
-                            <th><s:label for="status">Status</s:label></th>
-                            <th><s:label for="validPeriod">Valid Period</s:label></th>
+                            <th><s:label for="tripId">Trip ID</s:label></th>
+                            <th><s:label for="tripCost">Trip Cost</s:label></th>
+                            <th><s:label for="startMileage">Start Mileage</s:label></th>
+                            <th><s:label for="endMileage">End Mileage</s:label></th>
+                            <th><s:label for="endTime">End Time</s:label></th>
                             <th><s:label for="edit">Edit</s:label></th>
                         </tr>
                     </thead>
