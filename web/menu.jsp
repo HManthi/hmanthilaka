@@ -16,7 +16,7 @@
             <s:div class="container">
 			<ul id="gn-menu" class="gn-menu-main">
 				<li class="gn-trigger">
-					<s:a class="gn-icon gn-icon-menu">MENU</s:a>
+					<s:a></s:a>
 					
                                             <s:div class="gn-scroller">
                                 <ul class="gn-menu">
