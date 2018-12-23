@@ -23,21 +23,39 @@
         <script src="js/modernizr.custom.js"></script>
     </head>
     <body onload="noBack();" onpageshow="if(event.persisted) noBack();" onunload="">
+        <font color="white">
         <s:div>
         <center>
             <h3>Assign Manager</h3>
             <br>
-            <s:form>
-                <s:textfield id="manager" label="Manager" key="manager"></s:textfield>
-                <s:textfield id="vehicleNo" label="Vehicle No" key="vehicleNo"></s:textfield>
-                <s:textfield id="driver" label="Driver" key="driver"></s:textfield>
-                <s:textfield id="contact" label="Contact" key="contact"></s:textfield>
+            <s:form theme="simple">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><s:label>Manager :</s:label></td>
+                            <td><s:textfield id="manager" label="Manager" key="manager"></s:textfield></td>
+                        </tr>
+                        <tr>
+                            <td><s:label>Vehicle No :</s:label></td>
+                            <td><s:textfield id="vehicleNo" label="Vehicle No" key="vehicleNo"></s:textfield></td>
+                        </tr>
+                        <tr>
+                            <td><s:label>Driver :</s:label></td>
+                            <td><s:textfield id="driver" label="Driver" key="driver"></s:textfield></td>
+                        </tr>
+                        <tr>
+                            <td><s:label>Contact :</s:label></td>
+                            <td><s:textfield id="contact" label="Contact" key="contact"></s:textfield></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><s:submit value="Save"></s:submit>&nbsp;<s:submit value="Clean"></s:submit></td>
+                        </tr>
+                    </tbody>
+                </table>
             </s:form>
             <br>
-            <s:form theme="simple">
-                <s:submit value="Save"></s:submit>&nbsp;<s:submit value="Clean"></s:submit> 
-            </s:form>
-                <br>
+            
                 <hr>
                 
                 <h4>Manager Details</h4>
@@ -61,6 +79,7 @@
             </s:form>
         </center>
         </s:div>
+    </font>
     </body>
 </html>
  
