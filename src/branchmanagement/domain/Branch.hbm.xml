@@ -15,4 +15,11 @@
         <property column="modified_datetime" name="modifiedDatetime" type="java.sql.Timestamp" />
     </class>
 
+    <sql-query name="findBranches">
+        <return class="Branch" alias="br"/>
+            SELECT
+                br.*
+              FROM transport_hub.branch_details br
+    </sql-query>
+
 </hibernate-mapping>

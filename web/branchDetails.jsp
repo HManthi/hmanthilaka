@@ -49,6 +49,13 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <s:iterator value="branchList" var="branch">
+                             <tr>
+                                  <th><s:property value="#branch.branchId" /></th>
+                                  <th><s:property value="#branch.branchName" /></th>
+                                  <th><s:submit value="Edit"/></th>
+                             </tr>
+                        </s:iterator>
                     </tbody>
                 </table>
             </s:form>

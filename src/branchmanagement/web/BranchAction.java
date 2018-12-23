@@ -13,6 +13,7 @@ import org.apache.struts2.interceptor.ServletRequestAware;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.xml.stream.events.DTD;
+import java.util.List;
 import java.util.Map;
 
 public class BranchAction  extends ActionSupport implements ServletRequestAware, ModelDriven {
@@ -21,6 +22,7 @@ public class BranchAction  extends ActionSupport implements ServletRequestAware,
 	private BranchManager branchManager = new BranchManagerImpl();
 	private Branch newBranch = new Branch();
 	private HttpServletRequest request;
+	private List branchList;
 
 	@Override
 	public Object getModel() {
@@ -36,6 +38,28 @@ public class BranchAction  extends ActionSupport implements ServletRequestAware,
 		return this.request;
 	}
 
+	public void setBranchList(List branchList) {
+		this.branchList = branchList;
+	}
+
+	public List getBranchList() {
+		return branchList;
+	}
+
+	public String branchFetch() {
+		LOG.info("calling fetch branch method..");
+		Map session = ActionContext.getContext().getSession();
+
+		if (session.get("userName") != null) {
+			branchList = branchManager.fetchBranches();
+
+			LOG.info(branchList.toString());
+
+			return SUCCESS;
+		}
+		return LOGIN;
+	}
+
 	public String branchAdd() {
 		LOG.info("calling branchAdd method..");
 
@@ -48,12 +72,8 @@ public class BranchAction  extends ActionSupport implements ServletRequestAware,
 			newBranch.setCreatedBy(String.valueOf(session.get("userName")));
 			newBranch.setCreatedDatetime(DateTimeUtil.getSystemDate());
 
-
-//			newUser.setBirthday(DateTimeUtil.parseDate(getServletRequest().getParameter("birthday"), "MM/dd/yyyy"));
-//			newUser.setDepartmentId(Long.valueOf(getServletRequest().getParameter("departmentId")));
-//			newUser.setBranchId(Long.valueOf(getServletRequest().getParameter("branchId")));
-
 			branchManager.addBranch(newBranch);
+			branchList = branchManager.fetchBranches();
 			return SUCCESS;
 		}
 
