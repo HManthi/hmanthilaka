@@ -16,7 +16,7 @@
             <s:div class="container">
 			<ul id="gn-menu" class="gn-menu-main">
 				<li class="gn-trigger">
-					<s:a></s:a>
+					<s:a href="#"></s:a>
 					
                                             <s:div class="gn-scroller">
                                 <ul class="gn-menu">
@@ -44,8 +44,8 @@
 						</s:div><!-- /gn-scroller -->
 					
 				</li>
-				<li><s:a><span>Welcome</span></s:a></li>
-                                <li><s:a class="codrops-icon codrops-icon-drop" href="menu.jsp"><span>Vehicle Management System</span></s:a></li>
+				<li><s:a href="#"><span>Welcome <s:property value="#session.userName"/></span></s:a></li>
+                <li><s:a class="codrops-icon codrops-icon-drop" href="menu.jsp"><span>Vehicle Management System</span></s:a></li>
 			</ul>
                 </s:div><!-- /container -->
         
