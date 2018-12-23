@@ -28,8 +28,8 @@
         <center>
             <h3>Enter Accident Details</h3>
             <br>
-            <s:form theme="simple" class="form-style-7" action="register" method="post">
-                <table width="35">
+            <s:form theme="simple" class="form-style-7"  action="register" method="post">
+                <table width="35" >
                     <tbody>
                         <tr>
                             <td><s:label>Vehicle&nbsp;No :</s:label></td>
@@ -68,7 +68,8 @@
             <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="search" label="Search" key="search"></s:textfield></p>
             <br>
             <s:form theme="simple">
-                <table border="1" width="60%">
+                <center>
+                <table border="1" width="50%">
                     <thead>
                         <tr>
                             <th><s:label for="vehicle">Vehicle No</s:label></th>
@@ -83,6 +84,7 @@
                     <tbody>
                     </tbody>
                 </table>
+                </center>
                         <br><br>
                         <s:submit value="Previous"></s:submit>&nbsp;<s:submit value="Next"></s:submit>
             </s:form>
