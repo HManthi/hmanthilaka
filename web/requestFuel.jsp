@@ -24,21 +24,38 @@
         <script src="js/modernizr.custom.js"></script>
     </head>
     <body onload="noBack();" onpageshow="if(event.persisted) noBack();" onunload="">
+        <font color="white">
         <s:div>
         <center>
             <h3>Enter Request Fuel Details</h3>
             <br>
-            <s:form>
-                <s:textfield id="vehicleNo" label="Vehicle No" key="vehicleNo"></s:textfield>
-                <s:textfield id="requestName" label="Request Name" key="requestName"></s:textfield>
-                <s:select label="Station" list="{'AAA','BBB','CCC'}"></s:select>
-                <s:textfield id="balance" label="Balance" key="balance"></s:textfield>
+            <s:form theme="simple">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><s:label>Vehicle No :</s:label></td>
+                            <td><s:textfield id="vehicleNo" key="vehicleNo"></s:textfield></td>
+                        </tr>
+                        <tr>
+                            <td><s:label>Request Name :</s:label></td>
+                            <td><s:textfield id="requestName" key="requestName"></s:textfield></td>
+                        </tr>
+                        <tr>
+                            <td><s:label>Station :</s:label></td>
+                            <td><s:select list="{'AAA','BBB','CCC'}"></s:select></td>
+                        </tr>
+                        <tr>
+                            <td><s:label>Balance :</s:label></td>
+                            <td><s:textfield id="balance" key="balance"></s:textfield></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><s:submit value="Save"></s:submit>&nbsp;<s:submit value="Clean"></s:submit></td>
+                        </tr>
+                    </tbody>
+                </table>
             </s:form>
             <br>
-            <s:form theme="simple">
-                <s:submit value="Save"></s:submit>&nbsp;<s:submit value="Clean"></s:submit>
-            </s:form>
-                <br>
                 <hr>
                 <h4>Request Fuel Details</h4>
                 
@@ -60,6 +77,6 @@
                 
         </center>
         </s:div>
-        
-    </body>
+       </body>
+       </font>
 </html>
