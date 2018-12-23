@@ -24,24 +24,42 @@
         <script src="js/modernizr.custom.js"></script>
     </head>
     <body onload="noBack();" onpageshow="if(event.persisted) noBack();" onunload="">
+        <font color="white">
         <s:div>
         <center>
             <h3>Enter Emission Details</h3>
             <br>
-            <s:form>
-                <s:textfield id="vehicleNo" label="Vehicle No" key="vehicleNo"></s:textfield>
-                <s:select label="Company" list="{'ABC','DEF'}"></s:select>
-                <s:textfield id="serialNo" label="Serial No" key="serialNo"></s:textfield>
-                <s:select label="Status" list="{'AAA','BBB','CCC'}"></s:select>
-                <s:textfield id="validPeriod" label="Valid Period" key="validPeriod"></s:textfield>
-                
-                
+            <s:form theme="simple">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><s:label>Vehicle No :</s:label></td>
+                            <td><s:textfield id="vehicleNo" label="Vehicle No" key="vehicleNo"></s:textfield></td>
+                        </tr>
+                        <tr>
+                            <td><s:label>Company :</s:label></td>
+                            <td><s:select label="Company" list="{'ABC','DEF'}"></s:select></td>
+                        </tr>
+                        <tr>
+                            <td><s:label>Serial No :</s:label></td>
+                            <td><s:textfield id="serialNo" label="Serial No" key="serialNo"></s:textfield></td>
+                        </tr>
+                        <tr>
+                            <td><s:label>Status :</s:label></td>
+                            <td><s:select label="Status" list="{'AAA','BBB','CCC'}"></s:select></td>
+                        </tr>
+                        <tr>
+                            <td><s:label>Valid Period :</s:label></td>
+                            <td><s:textfield id="validPeriod" label="Valid Period" key="validPeriod"></s:textfield></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><s:submit value="Save"></s:submit>&nbsp;<s:submit value="Clean"></s:submit></td>
+                        </tr>
+                    </tbody>
+                </table>
             </s:form>
             <br>
-            <s:form theme="simple">
-                <s:submit value="Save"></s:submit>&nbsp;<s:submit value="Clean"></s:submit>
-            </s:form>
-                <br>
                 <hr>
                 <h4>Emission Details</h4>
                 
@@ -64,6 +82,6 @@
                 
         </center>
         </s:div>
-        
-    </body>
+     </body>
+     </font>
 </html>
