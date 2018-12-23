@@ -24,6 +24,7 @@
         <script src="js/modernizr.custom.js"></script>
     </head>
     <body onload="noBack();" onpageshow="if(event.persisted) noBack();" onunload="">
+        <font color="white">
         <s:div>
         <center>
             <h3>Enter Department Details</h3>
@@ -61,6 +62,6 @@
                 
         </center>
         </s:div>
-        
+        </font>
     </body>
 </html>

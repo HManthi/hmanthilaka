@@ -23,26 +23,24 @@
         <script src="js/modernizr.custom.js"></script>
     </head>
     <body onload="noBack();" onpageshow="if (event.persisted) noBack();" onunload="">
+        <font color="white">
         <s:div>
         <center>
             <h3>Assign Driver</h3>
             <br>
-            <s:form>
-                <table width="60%">
+            <s:form theme="simple" class="form-style-7" action="register" method="post">
+                <s:label>Vehicle No</s:label><s:textarea id="vehicleNo" key="vehicleNo"></s:textarea><br>
+                <s:label>Driver</s:label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textarea id="driver" key="driver"></s:textarea><br><br>
+                <table width="25">
                     <tbody>
                         <tr>
-                            <td><s:textarea id="vehicleNo" label="Vehicle No" key="vehicleNo"></s:textarea></td>
-                        </tr>
-                        <tr>
-                            <td><s:textarea id="driver" label="Driver" key="driver"></s:textarea></td>
+                            <td><s:submit value="Save"></s:submit></td>
+                            <td><s:submit value="Clean"></s:submit></td>
                         </tr>
                     </tbody>
                 </table>
             </s:form>
             <br>
-            <s:form theme="simple">
-                <s:submit value="Previous"></s:submit>&nbsp;<s:submit value="Next"></s:submit>
-            </s:form>
             <hr>
             <br><br>
             <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="search" label="Search" key="search"></s:textfield></p>
@@ -64,5 +62,6 @@
             </s:form>
         </center>
         </s:div>
+    </font>
     </body>
 </html>
