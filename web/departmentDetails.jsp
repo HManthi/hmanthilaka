@@ -24,18 +24,24 @@
         <script src="js/modernizr.custom.js"></script>
     </head>
     <body onload="noBack();" onpageshow="if(event.persisted) noBack();" onunload="">
+        <font color="white">
         <s:div>
         <center>
             <h3>Enter Department Details</h3>
             <br>
-            <s:form>
-                <s:textfield id="name" label="Name" key="name"></s:textfield>
-            </s:form>
+            <s:form theme="simple" action="branchAdd" method="POST">
+                <s:label>Name :</s:label>&nbsp;<s:textfield id="name" label="Name" key="name"></s:textfield><br><br>
+                <table width="25">
+                    <thead>
+                    <tbody>
+                        <tr>
+                            <td><s:submit value="Save"></s:submit></td>
+                            <td><s:submit value="Clean"></s:submit></td>
+                        </tr>
+                    </tbody>
+                </table>
+                </s:form>
             <br>
-            <s:form theme="simple">
-                <s:submit value="Save"></s:submit>&nbsp;<s:submit value="Clean"></s:submit>
-            </s:form>
-                <br>
                 <hr>
                 
                 <h4>Department Details</h4>
@@ -56,6 +62,6 @@
                 
         </center>
         </s:div>
-        
+        </font>
     </body>
 </html>
