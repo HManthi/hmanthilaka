@@ -24,21 +24,38 @@
         <script src="js/modernizr.custom.js"></script>
     </head>
     <body onload="noBack();" onpageshow="if(event.persisted) noBack();" onunload="">
+        <font color="white">
         <s:div>
         <center>
             <h3>Enter Maintenance Details</h3>
             <br>
-            <s:form>
-                <s:textfield id="vehicleNo" label="Vehicle No" key="vehicleNo"></s:textfield>
-                <s:textfield id="cost" label="Cost" key="cost"></s:textfield>
-                <s:textarea id="reason" label="Reason" key="reason" rows="5"></s:textarea>
-                <s:textarea id="details" label="Details" key="details" rows="5"></s:textarea>
+            <s:form theme="simple">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><s:label>Vehicle No :</s:label></td>
+                            <td><s:textfield id="vehicleNo" key="vehicleNo"></s:textfield></td>
+                        </tr>
+                        <tr>
+                            <td><s:label>Cost :</s:label></td>
+                            <td><s:textfield id="cost" key="cost"></s:textfield></td>
+                        </tr>
+                        <tr>
+                            <td><s:label>Reason :</s:label></td>
+                            <td><s:textarea id="reason" key="reason" rows="3"></s:textarea></td>
+                        </tr>
+                        <tr>
+                            <td><s:label>Details :</s:label></td>
+                            <td><s:textarea id="details" key="details" rows="3"></s:textarea></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><s:submit value="Save"></s:submit>&nbsp;<s:submit value="Clean"></s:submit></td>
+                        </tr>
+                    </tbody>
+                </table>
             </s:form>
             <br>
-            <s:form theme="simple">
-                <s:submit value="Save"></s:submit>&nbsp;<s:submit value="Clean"></s:submit>
-            </s:form>
-                <br>
                 <hr>
                 <h4>Maintenance Details</h4>
                 
@@ -62,4 +79,5 @@
         </s:div>
         
     </body>
+    </font>
 </html>
