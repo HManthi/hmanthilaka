@@ -21,6 +21,11 @@
         <link rel="stylesheet" type="text/css" href="css/component.css" />
         <link rel="stylesheet" type="text/css" href="css/positionCss.css" />
         <script src="js/modernizr.custom.js"></script>
+        <script>
+            $(document).ready(function (){
+                $("tr:even").css("background-color","lighblue");
+                })
+        </script>
     </head>
     <body onload="noBack();" onpageshow="if (event.persisted) noBack();" onunload="">
         <font color="white">
@@ -29,9 +34,9 @@
             <h3>Assign Driver</h3>
             <br>
             <s:form theme="simple" class="form-style-7" action="register" method="post">
-                <s:label>Vehicle No</s:label><s:textarea id="vehicleNo" key="vehicleNo"></s:textarea><br>
-                <s:label>Driver</s:label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textarea id="driver" key="driver"></s:textarea><br><br>
-                <table width="25">
+                <s:label>Vehicle No :</s:label><s:textarea id="vehicleNo" key="vehicleNo"></s:textarea><br>
+                <s:label>Driver :</s:label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textarea id="driver" key="driver"></s:textarea><br><br>
+                <table width="25" class=".TFtable">
                     <tbody>
                         <tr>
                             <td><s:submit value="Save"></s:submit></td>
