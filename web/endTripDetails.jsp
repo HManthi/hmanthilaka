@@ -24,24 +24,42 @@
         <script src="js/modernizr.custom.js"></script>
     </head>
     <body onload="noBack();" onpageshow="if(event.persisted) noBack();" onunload="">
+        <font color="white">
         <s:div>
         <center>
             <h3>Enter End Trip Details</h3>
             <br>
-            <s:form>
-                <s:textfield id="tripId" label="Trip ID" key="tripId"></s:textfield>
-                <s:textfield id="tripCost" label="Trip Cost" key="tripCost"></s:textfield>
-                <s:textfield id="startMileage" label="Start Mileage" key="startMileage"></s:textfield>
-                <s:textfield id="endtMileage" label="End Mileage" key="endMileage"></s:textfield>
-                <s:textfield id="endTime" label="End Time" key="endTime"></s:textfield>
-                
-                
+            <s:form theme="simple">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><s:label>Trip ID :</s:label></td>
+                            <td><s:textfield id="tripId" label="Trip ID" key="tripId"></s:textfield></td>
+                        </tr>
+                        <tr>
+                            <td><s:label>Trip Cost :</s:label></td>
+                            <td><s:textfield id="tripCost" label="Trip Cost" key="tripCost"></s:textfield></td>
+                        </tr>
+                        <tr>
+                            <td><s:label>Start Mileage :</s:label></td>
+                            <td><s:textfield id="startMileage" label="Start Mileage" key="startMileage"></s:textfield></td>
+                        </tr>
+                        <tr>
+                            <td><s:label>End Mileage :</s:label></td>
+                            <td><s:textfield id="endtMileage" label="End Mileage" key="endMileage"></s:textfield></td>
+                        </tr>
+                        <tr>
+                            <td><s:label>End Time :</s:label></td>
+                            <td><s:textfield id="endTime" label="End Time" key="endTime"></s:textfield></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><s:submit value="Save"></s:submit>&nbsp;<s:submit value="Clean"></s:submit></td>
+                        </tr>
+                    </tbody>
+                </table>
             </s:form>
             <br>
-            <s:form theme="simple">
-                <s:submit value="Save"></s:submit>&nbsp;<s:submit value="Clean"></s:submit>
-            </s:form>
-                <br>
                 <hr>
                 <h4>End Trip Details</h4>
                 
@@ -64,6 +82,6 @@
                 
         </center>
         </s:div>
-        
-    </body>
+      </body>
+      </font>   
 </html>
