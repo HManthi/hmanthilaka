@@ -7,7 +7,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html>
-<html>
+<!--[If lt IE 7]> <html class="no-js sidebar-large lt-ie9 lt-ie8 llt-ie7"> <!endif]-->
+<!--[If IE 7]><html class="no-js sidebar-large lt-ie9 lt-ie8"> <!endif]-->
+<!--[If IE 8]><html class="no-js sidebar-large lt-ie9"> <!endif]-->
+<!--[If gt IE 8 ]> <!-->
+<html class="no-js sidebar-large">
+<!--<!endif]-->
     <head>
         <title>Leave Details</title>
         <s:include value="menu.jsp"/>
@@ -24,21 +29,38 @@
         <script src="js/modernizr.custom.js"></script>
     </head>
     <body onload="noBack();" onpageshow="if(event.persisted) noBack();" onunload="">
+        <font color="white">
         <s:div>
         <center>
             <h3>Enter Leave Details</h3>
             <br>
-            <s:form>
-                <s:textfield id="driverId" label="Driver ID" key="driverId"></s:textfield>
-                <s:textfield id="driverName" label="Driver Name" key="driverName"></s:textfield>
-                <s:textfield id="from" label="From" key="from"></s:textfield>
-                <s:textfield id="to" label="To" key="to"></s:textfield>
+            <s:form theme="simple">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><s:label>Driver ID :</s:label></td>
+                            <td><s:textfield id="driverId" key="driverId"></s:textfield></td>
+                        </tr>
+                        <tr>
+                            <td><s:label>Driver Name :</s:label></td>
+                            <td><s:textfield id="driverName" key="driverName"></s:textfield></td>
+                        </tr>
+                        <tr>
+                            <td><s:label>From :</s:label></td>
+                            <td><s:textfield id="from" key="from"></s:textfield></td>
+                        </tr>
+                        <tr>
+                            <td><s:label>To :</s:label></td>
+                            <td><s:textfield id="to" key="to"></s:textfield></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><s:submit value="Save"></s:submit>&nbsp;<s:submit value="Clean"></s:submit></td>
+                        </tr>
+                    </tbody>
+                </table>
             </s:form>
             <br>
-            <s:form theme="simple">
-                <s:submit value="Save"></s:submit>&nbsp;<s:submit value="Clean"></s:submit>
-            </s:form>
-                <br>
                 <hr>
                 <h4>Leave Details</h4>
                 
@@ -60,6 +82,6 @@
                 
         </center>
         </s:div>
-        
-    </body>
+     </body>
+     </font>
 </html>
