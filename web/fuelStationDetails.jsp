@@ -24,24 +24,42 @@
         <script src="js/modernizr.custom.js"></script>
     </head>
     <body onload="noBack();" onpageshow="if(event.persisted) noBack();" onunload="">
+        <font color="white">
         <s:div>
         <center>
             <h3>Enter Fuel Station Details</h3>
             <br>
-            <s:form>
-                <s:textfield id="stationName" label="Station Name" key="stationName"></s:textfield>
-                <s:textfield id="location" label="Locaion" key="location"></s:textfield>
-                <s:textfield id="owner" label="Owner" key="owner"></s:textfield>
-                <s:textfield id="contactNo" label="Contact No" key="contactNo"></s:textfield>
-                <s:textfield id="price" label="Price" key="price"></s:textfield>
-                
-                
+            <s:form theme="simple">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><s:label>Station Name :</s:label></td>
+                            <td><s:textfield id="stationName" key="stationName"></s:textfield></td>
+                        </tr>
+                        <tr>
+                            <td><s:label>Location :</s:label></td>
+                            <td><s:textfield id="location" key="location"></s:textfield></td>
+                        </tr>
+                        <tr>
+                            <td><s:label>Owner :</s:label></td>
+                            <td><s:textfield id="owner" key="owner"></s:textfield></td>
+                        </tr>
+                        <tr>
+                            <td><s:label>Contact No :</s:label></td>
+                            <td><s:textfield id="contactNo" key="contactNo"></s:textfield></td>
+                        </tr>
+                        <tr>
+                            <td><s:label>Price :</s:label></td>
+                            <td><s:textfield id="price" key="price"></s:textfield></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><s:submit value="Save"></s:submit>&nbsp;<s:submit value="Clean" align="left"></s:submit></td>
+                        </tr>
+                    </tbody>
+                </table>
             </s:form>
             <br>
-            <s:form theme="simple">
-                <s:submit value="Save"></s:submit>&nbsp;<s:submit value="Clean"></s:submit>
-            </s:form>
-                <br>
                 <hr>
                 <h4>Fuel Station Details</h4>
                 
@@ -61,9 +79,8 @@
                     </tbody>
                 </table>
             </s:form>
-                
-        </center>
+           </center>
         </s:div>
-        
-    </body>
+      </body>
+      </font>
 </html>
