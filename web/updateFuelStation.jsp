@@ -24,20 +24,34 @@
         <script src="js/modernizr.custom.js"></script>
     </head>
     <body onload="noBack();" onpageshow="if(event.persisted) noBack();" onunload="">
+        <font color="white">
         <s:div>
         <center>
             <h3>Update Fuel Station</h3>
             <br>
-            <s:form>
-            <s:select label="Station" list="{'AAA','BBB','CCC'}"></s:select>
-            <s:textfield id="cashIn" label="Cash In" key="cashIn"></s:textfield>
-            <s:textfield id="currentDeposits" label="Current Deposits" key="currentDeposits"></s:textfield>
+            <s:form theme="simple">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><s:label>Station :</s:label></td>
+                            <td><s:select list="{'AAA','BBB','CCC'}"></s:select></td>
+                        </tr>
+                        <tr>
+                            <td><s:label>Cash In :</s:label></td>
+                            <td><s:textfield id="cashIn" key="cashIn"></s:textfield></td>
+                        </tr>
+                        <tr>
+                            <td><s:label>Current Deposits :</s:label></td>
+                            <td><s:textfield id="currentDeposits" key="currentDeposits"></s:textfield></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><s:submit value="Save"></s:submit>&nbsp;<s:submit value="Clean" align="left"></s:submit></td>
+                        </tr>
+                    </tbody>
+                </table>
             </s:form>
             <br>
-            <s:form theme="simple">
-                <s:submit value="Save"></s:submit>&nbsp;<s:submit value="Clean"></s:submit>
-            </s:form>
-                <br>
                 <hr>
                 <h4>Update Fuel Station Details</h4>
                 
@@ -60,4 +74,5 @@
         </s:div>
         
     </body>
+    </font>
 </html>
