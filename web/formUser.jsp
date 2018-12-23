@@ -21,24 +21,48 @@
 
 <body onload="noBack();" onpageshow="if (event.persisted) noBack();" onunload="">
     <s:include value="menu.jsp"/>
-        
+        <font color="white">
 <center>
 <s:div>
     <s:div>
+        
         <h1>User Registration</h1>
             
-       <s:form action="userAdd" method="POST">
-       <s:textfield id="userName" label="User Name" key="userName"></s:textfield>
-       <s:textfield id="fullName" label="Full Name" key="fullName"></s:textfield>
-       <s:textfield id="contactNo" label="Contact No" key="contactNo"></s:textfield>
-       <s:select id="role" label="Role" list="{'AAAA','FFFFF','RRRRRR'}"></s:select>
-       <s:select id="department" label="Department" list="{'AAAA','FFFFF','RRRRRR'}"></s:select>
-       <s:select id="branch" label="Branch" list="{'AAAA','FFFFF','RRRRRR'}"></s:select>
+        <s:form theme="simple" action="userAdd" method="POST">
+           <table>
+               <tbody>
+                   <tr>
+                       <td><s:label>User Name :</s:label></td>
+                       <td><s:textfield id="userName" key="userName"></s:textfield></td>
+                   </tr>
+                   <tr>
+                       <td><s:label>Full Name :</s:label></td>
+                       <td><s:textfield id="fullName" key="fullName"></s:textfield></td>
+                   </tr>
+                   <tr>
+                       <td><s:label>Contact No :</s:label></td>
+                       <td><s:textfield id="contactNo" key="contactNo"></s:textfield></td>
+                   </tr>
+                   <tr>
+                       <td><s:label>Role :</s:label></td>
+                       <td><s:select id="role" list="{'AAAA','FFFFF','RRRRRR'}"></s:select></td>
+                   </tr>
+                   <tr>
+                       <td><s:label>Department :</s:label></td>
+                       <td><s:select id="department" list="{'AAAA','FFFFF','RRRRRR'}"></s:select></td>
+                   </tr>
+                   <tr>
+                       <td><s:label>Branch :</s:label></td>
+                       <td><s:select id="branch" list="{'AAAA','FFFFF','RRRRRR'}"></s:select></td>
+                   </tr>
+                   <tr>
+                       <td>&nbsp;</td>
+                       <td><s:submit value="Add"></s:submit>&nbsp;<s:submit value="Clean"></s:submit></td>
+                   </tr>
+               </tbody>
+           </table>
        </s:form>
-       <s:form theme="simple">
-        <s:submit value="Add"></s:submit>
-        <s:submit value="Clean"></s:submit>
-        </s:form>
+       
     
     </s:div>
 <hr>
@@ -68,7 +92,8 @@
                             <s:submit value="Previous"></s:submit>&nbsp;<s:submit value="Next"></s:submit>
             </s:form>
   </s:div>
+                            
 </center>
-    
+</font>
 </body>
 </html>
