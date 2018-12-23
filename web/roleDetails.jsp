@@ -21,18 +21,27 @@
     </head>
 
     <body onload="noBack();" onpageshow="if (event.persisted) noBack();" onunload="">
+        <font color="white">
         <s:div>
         <center>
             <h3>Enter Role Details</h3>
             <br>
             <s:div>
-                  <s:form class="form-style-7" action="register" method="post">
-                    <s:textfield id="roleName" label="Role Name" key="roleName" ></s:textfield>
-                  </s:form>   
+                <s:form theme="simple" class="form-style-7" action="register" method="post">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><s:label>Role Name :</s:label></td>
+                                <td><s:textfield id="roleName" key="roleName" ></s:textfield></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td><s:submit value="Save"></s:submit>&nbsp;<s:submit value="Clean" align="left"></s:submit></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </s:form>   
                     <br>
-                    <s:form theme="simple">
-                <s:submit value="Save"></s:submit><s:submit value="Clean"></s:submit>
-                    </s:form>
             </s:div>   
             <hr>
             <h4>Role Details</h4>
@@ -59,6 +68,6 @@
             
         </center>             
     </s:div>
-                        
-</body>
+  </body>
+</font>
 </html>
