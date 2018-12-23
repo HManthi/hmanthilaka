@@ -14,7 +14,5 @@
         <property name="connection.pool_size">20</property>
         <property name="hibernate.cache.use_second_level_cache">false</property>
 
-        <!--<mapping resource="usermanagement/domain/user.hbm.xml"/>-->
-        <!--<mapping resource="usermanagement/domain/user.hbm.xml"/>-->
     </session-factory>
 </hibernate-configuration>

@@ -1,5 +1,8 @@
 .classpath
 
 .idea/
+out/
+web/WEB-INF/classes/
+FleetManagement.userlibraries
 
 FleetManagement.iml

@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
         "http://struts.apache.org/dtds/struts-2.3.dtd">
-<struts>
-    <constant name="struts.devMode" value="false"/>
-    <constant value="global" name="struts.custom.i18n.resources"/>
-    <constant name="struts.devMode" value="false"/>
-    <constant name="struts.devMode" value="false"/>
 
-    <package name="default" namespace="/" extends="struts-default">
+<struts>
+    <package name="branch" namespace="/" extends="struts-default">
         <global-results>
             <result name="error" type="redirectAction">
                 <param name="actionName">error</param>
                 <param name="namespace">/</param>
             </result>
-            <result>
+            <result name="errors" type="redirectAction">
                 <param name="actionName">errors</param>
                 <param name="namespace">/</param>
             </result>
@@ -23,21 +19,21 @@
             <exception-mapping exception="java.lang.Exception" result="error"/>
         </global-exception-mappings>
 
-        <action name="error">
-            <result>/error.jsp</result>
+        <action name="branch*" class="branchmanagement.web.BranchAction" method="branch{1}">
+            <result name="success">/branchDetails.jsp</result>
+            <result name="login" type="redirectAction">
+                <param name="actionName">index</param>
+                <param name="namespace">/</param>
+            </result>
         </action>
 
-        <action name="errors">
-            <result>/error.jsp</result>
-        </action>
 
-        <action name="index" class="login.web.LoginAction">
-            <result name="success">/formLogin.jsp</result>
+        <action name="branchAction!*" class="branchmanagement.web.BranchAction" method="{1}">
+            <result name="success">/branchDetails.jsp</result>
+            <result name="login" type="redirectAction">
+                <param name="actionName">index</param>
+                <param name="namespace">/</param>
+            </result>
         </action>
     </package>
-    
-    <include file="login/web/login.struts.xml"/>
-    <include file="usermanagement/web/user.struts.xml"/>
-    <include file="branchmanagement/web/branch.struts.xml"/>
 </struts>
-

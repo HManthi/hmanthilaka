@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="branchmanagement.domain">
+
+    <class name="Branch" table="branch_details">
+        <id column="branch_id" name="branchId" type="java.lang.Long">
+            <generator class="increment"/>
+        </id>
+        <property column="branch_name" name="branchName" type="java.lang.String" />
+        <property column="created_by" name="createdBy" type="java.lang.String" />
+        <property column="created_datetime" name="createdDatetime" type="java.sql.Timestamp" />
+        <property column="modified_by" name="modifiedBy" type="java.lang.String" />
+        <property column="modified_datetime" name="modifiedDatetime" type="java.sql.Timestamp" />
+    </class>
+
+</hibernate-mapping>

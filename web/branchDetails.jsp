@@ -28,11 +28,10 @@
         <center>
             <h3>Enter Branch Details</h3>
             <br>
-            <s:form>
-                <s:textfield id="name" label="Name" key="name"></s:textfield>
-            </s:form>
+
             <br>
-            <s:form theme="simple">
+            <s:form theme="simple" action="branchAdd" method="POST">
+                <s:textfield id="branchName" label="Name" key="branchName"></s:textfield>
                 <s:submit value="Save"></s:submit>&nbsp;<s:submit value="Clean"></s:submit>
             </s:form>
                 <br>

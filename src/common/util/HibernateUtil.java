@@ -20,7 +20,8 @@ public class HibernateUtil {
 	  	try {
 			Configuration configuration = new Configuration();
 			configuration.configure("hibernate.cfg.xml")
-			.addResource("usermanagement/domain/user.hbm.xml")
+			.addResource("usermanagement/domain/User.hbm.xml")
+			.addResource("branchmanagement/domain/Branch.hbm.xml")
 			;
 
 			ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties()).build();
