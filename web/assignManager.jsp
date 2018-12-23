@@ -33,19 +33,19 @@
                     <tbody>
                         <tr>
                             <td><s:label>Manager :</s:label></td>
-                            <td><s:textfield id="manager" label="Manager" key="manager"></s:textfield></td>
+                            <td><s:textfield id="manager" key="manager"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Vehicle No :</s:label></td>
-                            <td><s:textfield id="vehicleNo" label="Vehicle No" key="vehicleNo"></s:textfield></td>
+                            <td><s:textfield id="vehicleNo" key="vehicleNo"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Driver :</s:label></td>
-                            <td><s:textfield id="driver" label="Driver" key="driver"></s:textfield></td>
+                            <td><s:textfield id="driver" key="driver"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Contact :</s:label></td>
-                            <td><s:textfield id="contact" label="Contact" key="contact"></s:textfield></td>
+                            <td><s:textfield id="contact" key="contact"></s:textfield></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>

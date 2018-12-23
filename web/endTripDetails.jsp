@@ -34,23 +34,23 @@
                     <tbody>
                         <tr>
                             <td><s:label>Trip ID :</s:label></td>
-                            <td><s:textfield id="tripId" label="Trip ID" key="tripId"></s:textfield></td>
+                            <td><s:textfield id="tripId" key="tripId"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Trip Cost :</s:label></td>
-                            <td><s:textfield id="tripCost" label="Trip Cost" key="tripCost"></s:textfield></td>
+                            <td><s:textfield id="tripCost" key="tripCost"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Start Mileage :</s:label></td>
-                            <td><s:textfield id="startMileage" label="Start Mileage" key="startMileage"></s:textfield></td>
+                            <td><s:textfield id="startMileage" key="startMileage"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>End Mileage :</s:label></td>
-                            <td><s:textfield id="endtMileage" label="End Mileage" key="endMileage"></s:textfield></td>
+                            <td><s:textfield id="endtMileage" key="endMileage"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>End Time :</s:label></td>
-                            <td><s:textfield id="endTime" label="End Time" key="endTime"></s:textfield></td>
+                            <td><s:textfield id="endTime" key="endTime"></s:textfield></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>

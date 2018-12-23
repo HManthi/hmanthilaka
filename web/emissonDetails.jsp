@@ -34,23 +34,23 @@
                     <tbody>
                         <tr>
                             <td><s:label>Vehicle No :</s:label></td>
-                            <td><s:textfield id="vehicleNo" label="Vehicle No" key="vehicleNo"></s:textfield></td>
+                            <td><s:textfield id="vehicleNo" key="vehicleNo"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Company :</s:label></td>
-                            <td><s:select label="Company" list="{'ABC','DEF'}"></s:select></td>
+                            <td><s:select list="{'ABC','DEF'}"></s:select></td>
                         </tr>
                         <tr>
                             <td><s:label>Serial No :</s:label></td>
-                            <td><s:textfield id="serialNo" label="Serial No" key="serialNo"></s:textfield></td>
+                            <td><s:textfield id="serialNo"  key="serialNo"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Status :</s:label></td>
-                            <td><s:select label="Status" list="{'AAA','BBB','CCC'}"></s:select></td>
+                            <td><s:select list="{'AAA','BBB','CCC'}"></s:select></td>
                         </tr>
                         <tr>
                             <td><s:label>Valid Period :</s:label></td>
-                            <td><s:textfield id="validPeriod" label="Valid Period" key="validPeriod"></s:textfield></td>
+                            <td><s:textfield id="validPeriod" key="validPeriod"></s:textfield></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
