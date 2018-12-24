@@ -57,11 +57,11 @@
                             <td><s:radio name = "gender" list="{'Male','Female'}" /></td>
                         </tr>
                         <tr>
-                        <td><s:label>Issue Date :</s:label></td>
+                        <td><s:label>Issue&nbsp;Date :</s:label></td>
                         <td><sj:datepicker id="issueDate"></sj:datepicker></td>
                         </tr>
                         <tr>
-                        <td><s:label>Expire Date :</s:label></td>
+                        <td><s:label>Expire&nbsp;Date :</s:label></td>
                         <td><sj:datepicker id="expireDate"></sj:datepicker></td>
                         </tr>
                         <tr>
