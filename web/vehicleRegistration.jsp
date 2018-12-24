@@ -30,7 +30,7 @@
             <h3>Enter Vehicle Registration</h3>
             <br>
             <s:form theme="simple" class="form-style-7"  action="register" method="post">
-                <table width="35" >
+                <table width="45%" >
                     <tbody>
                         <tr>
                             <td><s:label>Branch :</s:label></td>
