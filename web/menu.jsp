@@ -17,9 +17,8 @@
             <s:div class="container">
 			<ul id="gn-menu" class="gn-menu-main">
 				<li class="gn-trigger">
-                                    <s:a href="#"><span>Welcome</span></s:a>
-					
-                                            <s:div class="gn-scroller">
+                <s:a href="#"><span>Welcome <s:property value="#session.userName"/></span></s:a>
+				<s:div class="gn-scroller">
                                 <ul class="gn-menu">
                                 <li><s:a class="gn-icon gn-icon-cog" href="accidentDetails.jsp">&nbsp;&nbsp;<img src="images/accident_details.png" height="24" width="24"/>&nbsp;&nbsp;Accident Details</s:a></li>
                                 <li><s:a class="gn-icon gn-icon-cog" href="assignDrivers.jsp">&nbsp;&nbsp;<img src="images/user.png" height="24" width="24"/>&nbsp;&nbsp;Assign Driver</s:a></li>
@@ -45,13 +44,11 @@
 						</s:div><!-- /gn-scroller -->
 					
 				</li>
-				<li><s:a href="#"><span>Vehicle Management System</span><s:property value="#session.userName"/></span></s:a></li>
-                <li><s:a class="codrops-icon codrops-icon-drop" href="#">Logout</s:a></li>
+				<li><s:a href="#"><span>Vehicle Management System</span></s:a></li>
+                <li><s:a class="codrops-icon codrops-icon-drop" href="logout"><span>Logout</span></s:a></li>
 			</ul>
-                </s:div><!-- /container -->
-        
-                
-                
+            </s:div><!-- /container -->
+
 		<script src="js/classie.js"></script>
 		<script src="js/gnmenu.js"></script>
 		<script>
