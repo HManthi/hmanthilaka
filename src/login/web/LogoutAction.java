@@ -12,7 +12,7 @@ public class LogoutAction extends ActionSupport {
 	@Override
 	public String execute() throws Exception {
 		Map session = ActionContext.getContext().getSession();
-		LOG.info(session.get("username") + " did logout from the system");
+		LOG.info(session.get("userName") + " did logout from the system");
 
 		session.remove("userName");
 		session.remove("roleId");

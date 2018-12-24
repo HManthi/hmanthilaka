@@ -46,6 +46,7 @@
                 <param name="actionName">index</param>
                 <param name="namespace">/</param>
             </result>
+            <!--<result name="login">/formLogin.jsp</result>-->
             <result name="input" type="redirectAction">
                 <param name="actionName">index</param>
                 <param name="namespace">/</param>
