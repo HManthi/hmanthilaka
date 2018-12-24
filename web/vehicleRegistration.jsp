@@ -59,7 +59,7 @@
                             <td><s:label>Purchase&nbsp;Date :</s:label></td>
                             <td><sj:datepicker id="purchaseDate"></sj:datepicker></td>
                             <td>&nbsp;</td>
-                            <td><s:label>Purchase Price :</s:label></td>
+                            <td><s:label>Purchase&nbsp;Price :</s:label></td>
                             <td><s:textfield id="purchasePrice" key="purchasePrice"></s:textfield></td>
                             </tr>
 
