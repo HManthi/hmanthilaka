@@ -1,30 +1,29 @@
-package branchmanagement.domain;
+package departmentmanagement.domain;
 
 import java.util.Date;
 
-public class Branch {
-
-	private Long branchId;
-	private String branchName;
+public class Department {
+	private Long departmentId;
+	private String departmentName;
 	private String createdBy;
 	private Date createdDatetime;
 	private String modifiedBy;
 	private Date modifiedDatetime;
 
-	public Long getBranchId() {
-		return branchId;
+	public Long getDepartmentId() {
+		return departmentId;
 	}
 
-	public void setBranchId(Long branchId) {
-		this.branchId = branchId;
+	public void setDepartmentId(Long departmentId) {
+		this.departmentId = departmentId;
 	}
 
-	public String getBranchName() {
-		return branchName;
+	public String getDepartmentName() {
+		return departmentName;
 	}
 
-	public void setBranchName(String branchName) {
-		this.branchName = branchName;
+	public void setDepartmentName(String departmentName) {
+		this.departmentName = departmentName;
 	}
 
 	public String getCreatedBy() {

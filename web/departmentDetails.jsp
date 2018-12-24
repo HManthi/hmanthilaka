@@ -26,8 +26,8 @@
         <center>
             <h3>Enter Department Details</h3>
             <br>
-            <s:form theme="simple" action="branchAdd" method="POST">
-                <s:label>Name :</s:label>&nbsp;<s:textfield id="name" label="Name" key="name"></s:textfield><br><br>
+            <s:form theme="simple" action="departmentAdd" method="POST">
+                <s:label>Name :</s:label>&nbsp;<s:textfield id="departmentName" label="Name" key="departmentName"></s:textfield><br><br>
                 <table width="25">
                     <thead>
                     <tbody>
@@ -53,6 +53,13 @@
                         </tr>
                     </thead>
                     <tbody>
+                    <s:iterator value="departmentList" var="department">
+                         <tr>
+                             <th><s:property value="#department.departmentId" /></th>
+                             <th><s:property value="#department.departmentName" /></th>
+                             <th><s:submit value="Edit"/></th>
+                         </tr>
+                    </s:iterator>
                     </tbody>
                 </table>
             </s:form>

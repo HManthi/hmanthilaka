@@ -39,5 +39,6 @@
     <include file="login/web/login.struts.xml"/>
     <include file="usermanagement/web/user.struts.xml"/>
     <include file="branchmanagement/web/branch.struts.xml"/>
+    <include file="departmentmanagement/web/department.struts.xml"/>
 </struts>
 
