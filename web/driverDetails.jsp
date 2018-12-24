@@ -30,7 +30,7 @@
             <h3>Enter Driver Details</h3>
             <br>
             <s:form theme="simple" class="form-style-7"  action="register" method="post">
-                <table width="35" >
+                <table width="17%">
                 <tbody>
                         <tr>
                             <td><s:label>Driver&nbsp;ID :</s:label></td>
