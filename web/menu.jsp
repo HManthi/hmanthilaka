@@ -11,6 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<script src="js/modernizr.custom.js"></script>
+		<script type="text/javascript" src="js/noCache.js"></script>
                 
 	</head>     
 	<body>

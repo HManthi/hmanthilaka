@@ -14,6 +14,7 @@
         <link rel="stylesheet" type="text/css" href="css/component.css" />
         <link rel="stylesheet" type="text/css" href="css/formsCss.css"/>
         <script src="js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="js/noCache.js"></script>
     </head>
 
 <body onload="noBack();" onpageshow="if (event.persisted) noBack();" onunload="">
