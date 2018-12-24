@@ -18,7 +18,7 @@
 </head>
 
 <body onload="noBack();" onpageshow="if (event.persisted) noBack();" onunload="" class="login" data-page="login">
-<s:divid="login-block">
+<s:div id="login-block">
     <s:div>
         <s:action name="index" namespace="/" executeResult="true"/>
     </s:div>

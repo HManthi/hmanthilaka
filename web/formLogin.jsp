@@ -21,7 +21,7 @@
 
                     <hr>
                         <s:div>
-                            <s:form id="login-form" action="login" method="POST">
+                            <s:form id="login-form" action="loginUser" method="POST">
                               <s:textfield id="userName" placeHolder="Username" key="userName"></s:textfield>
                               <s:password id="password" placeHolder="Password" key="password"></s:password>
                               <s:submit value="Login" method="userLogin"></s:submit>
