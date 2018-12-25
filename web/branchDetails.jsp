@@ -21,20 +21,20 @@
         <script src="js/modernizr.custom.js"></script>
     </head>
     <body onload="noBack();" onpageshow="if(event.persisted) noBack();" onunload="">
+        <font color="white">
         <s:div>
         <center>
             <h3>Enter Branch Details</h3>
             <br>
 
-            <br>
             <s:form theme="simple" action="branchAdd" method="POST">
                 <s:textfield id="branchName" label="Name" key="branchName"></s:textfield>
                 <s:submit value="Save"></s:submit>&nbsp;<s:submit value="Clean"></s:submit>
             </s:form>
-                <br>
                 <hr>
-                
-                <h4>Branch Details</h4>
+            <br>
+            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="search" label="Search" key="search"></s:textfield></p>
+            <h4>Branch Details</h4>
                 
                 <s:form theme="simple">
                 <table border="1" width="60%">
@@ -58,5 +58,6 @@
             </s:form>
         </center>
         </s:div>
+    </font>
     </body>
 </html>
