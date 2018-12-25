@@ -14,6 +14,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script type="text/javascript" src="js/noCache.js"></script>
+        <script type="text/javascript" src="js/searchBtn.js"></script>
         <link rel="stylesheet" type="text/css" href="css/normalize.css" />
         <link rel="stylesheet" type="text/css" href="css/demo.css" />
         <link rel="stylesheet" type="text/css" href="css/component.css" />
@@ -50,11 +51,11 @@
             </s:form>
                 <hr>
             <br>
-            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="search" label="Search" key="search"></s:textfield></p>
+            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()"></s:textfield></p>
             <h4>Branch Details</h4>
                 
                 <s:form theme="simple">
-                <table border="1" width="60%">
+                    <table border="1" width="60%" id="myTable">
                     <thead>
                         <tr>
                             <th><s:label for="id">ID</s:label></th>
