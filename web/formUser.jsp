@@ -26,35 +26,45 @@
         <h1>User Registration</h1>
             
         <s:form theme="simple" action="userAdd" method="POST">
-           <table>
+           <table width="45%">
                <tbody>
                    <tr>
                        <td><s:label>User Name :</s:label></td>
                        <td><s:textfield id="userName" key="userName"></s:textfield></td>
+                       <td><s:label>First Name :</s:label></td>
+                       <td><s:textfield id="firstName" key="firstName"></s:textfield></td>
                    </tr>
                    <tr>
-                       <td><s:label>Full Name :</s:label></td>
-                       <td><s:textfield id="fullName" key="fullName"></s:textfield></td>
+                       <td><s:label>Last Name :</s:label></td>
+                       <td><s:textfield id="lastName" key="lastName"></s:textfield></td>
+                       <td><s:label>Password :</s:label></td>
+                       <td><s:textfield id="password" key="password"></s:textfield></td>
                    </tr>
                    <tr>
                        <td><s:label>Contact No :</s:label></td>
                        <td><s:textfield id="contactNo" key="contactNo"></s:textfield></td>
-                   </tr>
-                   <tr>
                        <td><s:label>Role :</s:label></td>
                        <td><s:select id="role" list="{'AAAA','FFFFF','RRRRRR'}"></s:select></td>
+                       
                    </tr>
                    <tr>
                        <td><s:label>Department :</s:label></td>
                        <td><s:select id="department" list="{'AAAA','FFFFF','RRRRRR'}"></s:select></td>
-                   </tr>
-                   <tr>
                        <td><s:label>Branch :</s:label></td>
                        <td><s:select id="branch" list="{'AAAA','FFFFF','RRRRRR'}"></s:select></td>
+                       
                    </tr>
                    <tr>
                        <td>&nbsp;</td>
+                       <td>&nbsp;</td>
+                       <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                   </tr>
+                   <tr>
+                       <td>&nbsp;</td>
+                       <td>&nbsp;</td>
                        <td><s:submit value="Add"></s:submit>&nbsp;<s:submit value="Clean"></s:submit></td>
+                        <td>&nbsp;</td>
                    </tr>
                </tbody>
            </table>
