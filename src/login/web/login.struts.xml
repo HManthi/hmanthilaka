@@ -20,6 +20,7 @@
         </global-exception-mappings>
 
         <action name="loginUser" class="login.web.LoginAction" method="userLogin">
+            <exception-mapping exception="java.lang.NullPointerException" result="input"/>
             <!--<result name="success" type="redirectAction">-->
                 <!--<param name="actionName">userManagement</param>-->
                 <!--<param name="namespace">/</param>-->
@@ -29,10 +30,7 @@
                 <param name="actionName">index</param>
                 <param name="namespace">/</param>
             </result>
-            <result name="login" type="redirectAction">
-                <param name="actionName">index</param>
-                <param name="namespace">/</param>
-            </result>
+            <result name="login">/formLogin.jsp</result>
             <result name="input" type="redirectAction">
                 <param name="actionName">index</param>
                 <param name="namespace">/</param>
