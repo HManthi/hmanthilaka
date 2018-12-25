@@ -30,19 +30,17 @@
             <h3>Enter Vehicle Registration</h3>
             <br>
             <s:form theme="simple" class="form-style-7"  action="register" method="post">
-                <table width="840">
+                <table width="60%">
                     <tbody>
                         <tr>
                             <td><s:label>Branch :</s:label></td>
                             <td><s:select list="{'aaa','ddddd'}"></s:select></td>
-                            <td>&nbsp;</td>
                             <td><s:label>Vehicle&nbsp;No :</s:label></td>
                             <td><s:textfield id="vehicleNo" key="vehicleNo"></s:textfield></td>
                             </tr>
                             <tr>
                             <td><s:label>Manufactured&nbsp;Year :</s:label></td>
                             <td><s:textfield id="manifacturedYear" key="manifacturedYear"></s:textfield></td>
-                            <td>&nbsp;</td>                            
                             <td><s:label>Type :</s:label></td>
                             <td><s:textfield id="type" key="type"></s:textfield></td>
                             </tr>
@@ -50,7 +48,6 @@
                             <tr>
                             <td><s:label>Brand :</s:label></td>
                             <td><s:textfield id="brand" key="brand"></s:textfield></td>
-                            <td>&nbsp;</td>
                             <td><s:label>Model :</s:label></td>
                             <td><s:textfield id="model" key="model"></s:textfield></td>
                             </tr>
@@ -58,7 +55,6 @@
                             <tr>
                             <td><s:label>Purchase&nbsp;Date :</s:label></td>
                             <td><sj:datepicker id="purchaseDate"></sj:datepicker></td>
-                            <td>&nbsp;</td>
                             <td><s:label>Purchase&nbsp;Price :</s:label></td>
                             <td><s:textfield id="purchasePrice" key="purchasePrice"></s:textfield></td>
                             </tr>
@@ -66,7 +62,6 @@
                             <tr>
                             <td><s:label>Owner :</s:label></td>
                             <td><s:textfield id="owner" key="owner"></s:textfield></td>
-                            <td>&nbsp;</td>
                             <td><s:label>Address :</s:label></td>
                             <td><s:textfield id="address" key="address"></s:textfield></td>
                             </tr>
@@ -74,7 +69,6 @@
                             <tr>
                             <td><s:label>Contact No :</s:label></td>
                             <td><s:textfield id="contactNo" key="contactNo"></s:textfield></td>
-                            <td>&nbsp;</td>
                             <td><s:label>Vender :</s:label></td>
                             <td><s:textfield id="vender" key="vender"></s:textfield></td>
                             </tr>
@@ -82,12 +76,10 @@
                             <tr>
                             <td><s:label>Status :</s:label></td>
                             <td><s:select list="{'aaa','ddddd'}"></s:select></td>
-                            <td>&nbsp;</td>
                             <td><s:label>Vehicle&nbsp;Book :</s:label></td>
                             <td><s:file name="upload"></s:file></td>
                             </tr>
                             <tr>
-                                <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
@@ -98,7 +90,7 @@
                                 <td>&nbsp;</td>
                                 <td><s:submit value="Save"></s:submit></td>
                                 <td><s:submit value="Clean"></s:submit></td>
-                                <td>&nbsp;</td>
+                                
                             </tr>
                         </tbody>
                     </table>
