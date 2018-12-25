@@ -3,6 +3,8 @@ package drivermanagement.web;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
+import common.util.CommonUtil;
+import common.util.DateTimeUtil;
 import drivermanagement.domain.Driver;
 import drivermanagement.domain.DriverType;
 import org.apache.log4j.Logger;
@@ -59,6 +61,36 @@ public class DriverAction extends ActionSupport implements ServletRequestAware, 
 	}
 
 	public String driverAdd() {
+		Map session = ActionContext.getContext().getSession();
+
+		LOG.info("session.get(\"userName\") = " + session.get("userName"));
+		LOG.info("driverName = " + getServletRequest().getParameter("driverName"));
+		LOG.info("address = " + getServletRequest().getParameter("address"));
+		LOG.info("contactNo = " + getServletRequest().getParameter("contactNo"));
+		LOG.info("licenseNo = " + getServletRequest().getParameter("licenseNo"));
+		LOG.info("gender = " + getServletRequest().getParameter("gender"));
+		LOG.info("driverType = " + getServletRequest().getParameter("driverType"));
+		LOG.info("issueDate = " + getServletRequest().getParameter("issueDate"));
+		LOG.info("expireDate = " + getServletRequest().getParameter("expireDate"));
+
+		if (session.get("userName") != null) {
+			newDriver.setDriverName(getServletRequest().getParameter("driverName"));
+			newDriver.setAddress(getServletRequest().getParameter("address"));
+			newDriver.setContactNum(getServletRequest().getParameter("contactNo"));
+			newDriver.setLicenseNum(getServletRequest().getParameter("licenseNo"));
+			newDriver.setGender(getServletRequest().getParameter("gender"));
+			newDriver.setDriverTypeId(Long.valueOf(getServletRequest().getParameter("driverType")));
+			newDriver.setIssueDate(DateTimeUtil.parseDate(getServletRequest().getParameter("issueDate"), "MM/dd/yyyy"));
+			newDriver.setExpireDate(DateTimeUtil.parseDate(getServletRequest().getParameter("expireDate"), "MM/dd/yyyy"));
+			newDriver.setCreatedBy(String.valueOf(session.get("userName")));
+			newDriver.setCreatedDatetime(DateTimeUtil.getSystemDate());
+
+			driverManager.addDriver(newDriver);
+
+			setDriverTypes(driverManager.getDriverTypes());
+			return SUCCESS;
+		}
+
 		return LOGIN;
 	}
 

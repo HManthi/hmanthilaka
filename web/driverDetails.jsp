@@ -54,16 +54,16 @@
                         </tr>
                         <tr>
                             <td><s:label>Type :</s:label></td>
-                            <td><s:select name="driverTypes" list="driverTypes" listKey="driverTypeId" listValue="driverType"/>
+                            <td><s:select name="driverType" list="driverTypes" listKey="driverTypeId" listValue="driverType"/>
                             </td>
                         </tr>
                         <tr>
                         <td><s:label>Issue&nbsp;Date :</s:label></td>
-                        <td><sj:datepicker id="issueDate"></sj:datepicker></td>
+                        <td><sj:datepicker id="issueDate" name="issueDate"></sj:datepicker></td>
                         </tr>
                         <tr>
                         <td><s:label>Expire&nbsp;Date :</s:label></td>
-                        <td><sj:datepicker id="expireDate"></sj:datepicker></td>
+                        <td><sj:datepicker id="expireDate" name="expireDate"></sj:datepicker></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>

@@ -2,6 +2,7 @@ package drivermanagement.service;
 
 import drivermanagement.dao.DriverDao;
 import drivermanagement.dao.DriverDaoHibernate;
+import drivermanagement.domain.Driver;
 import org.apache.log4j.Logger;
 
 import java.util.List;
@@ -20,5 +21,10 @@ public class DriverManagerImpl implements DriverManager {
 	public List getDriverTypes() {
 		LOG.info("getDriverTypes");
 		return driverDao.getDriverTypes();
+	}
+
+	@Override
+	public void addDriver(Driver driver) {
+		driverDao.addDriver(driver);
 	}
 }

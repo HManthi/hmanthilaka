@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="drivermanagement.domain">
+
+    <class name="Driver" table="driver_details">
+        <id column="driver_id" name="driverId" type="java.lang.Long">
+            <generator class="increment"/>
+        </id>
+        <property column="driver_name" name="driverName" type="java.lang.String" />
+        <property column="address" name="address" type="java.lang.String" />
+        <property column="contact_num" name="contactNum" type="java.lang.String" />
+        <property column="license_num" name="licenseNum" type="java.lang.String" />
+        <property column="gender" name="gender" type="java.lang.String" />
+        <property column="driver_type_id" name="driverTypeId" type="java.lang.Long" />
+        <property column="issue_date" name="issueDate" type="java.util.Date" />
+        <property column="expire_date" name="expireDate" type="java.util.Date" />
+        <property column="created_by" name="createdBy" type="java.lang.String" />
+        <property column="created_datetime" name="createdDatetime" type="java.sql.Timestamp" />
+        <property column="modified_by" name="modifiedBy" type="java.lang.String" />
+        <property column="modified_datetime" name="modifiedDatetime" type="java.sql.Timestamp" />
+    </class>
+
+    <sql-query name="fetchDrivers">
+        <return class="Driver" alias="dr"/>
+        SELECT
+            dr.*
+          FROM transport_hub.driver_details dr
+    </sql-query>
+</hibernate-mapping>

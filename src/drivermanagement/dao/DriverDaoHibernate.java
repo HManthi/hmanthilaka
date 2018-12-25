@@ -1,13 +1,18 @@
 package drivermanagement.dao;
 
 import common.util.HibernateUtil;
+import drivermanagement.domain.Driver;
 import drivermanagement.domain.DriverType;
+import org.apache.log4j.Logger;
+import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.Session;
 
 import java.util.List;
 
 public class DriverDaoHibernate implements DriverDao {
+	private Logger LOG = Logger.getLogger(DriverDaoHibernate.class);
+
 	@Override
 	public List fetchDrivers() {
 		return null;
@@ -24,5 +29,24 @@ public class DriverDaoHibernate implements DriverDao {
 			driverTypes = query.list();
 		}
 		return driverTypes;
+	}
+
+	@Override
+	public void addDriver(Driver driver) {
+		Session session = null;
+
+		try {
+			session = HibernateUtil.getSessionFactory().openSession();
+
+			session.beginTransaction();
+			session.saveOrUpdate(driver);
+			session.getTransaction().commit();
+		} catch (HibernateException ex) {
+			LOG.error("Couldn't save driver" + ex);
+		} finally {
+			if (session != null) {
+				session.close();
+			}
+		}
 	}
 }

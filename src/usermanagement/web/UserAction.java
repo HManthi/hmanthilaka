@@ -47,15 +47,6 @@ public class UserAction extends ActionSupport implements ServletRequestAware, Mo
 		LOG.info("calling addUser method..");
 
 		Map session = ActionContext.getContext().getSession();
-		LOG.info("session.get(\"userName\") = " + session.get("userName"));
-		LOG.info("userName = " + getServletRequest().getParameter("userName"));
-		LOG.info("firstName = " + getServletRequest().getParameter("firstName"));
-		LOG.info("password = " + getServletRequest().getParameter("password"));
-		LOG.info("encpassword = " + CommonUtil.getHash(getServletRequest().getParameter("password")));
-		LOG.info("email = " + getServletRequest().getParameter("email"));
-		LOG.info("phone = " + getServletRequest().getParameter("phone"));
-
-
 
 		if (session.get("userName") != null) {
 			newUser.setUserName(getServletRequest().getParameter("userName"));

@@ -19,7 +19,7 @@ public final class DateTimeUtil {
 	public static Date parseDate(String dateString, String format) {
 
 		try {
-			SimpleDateFormat sdf = new SimpleDateFormat();
+			SimpleDateFormat sdf = new SimpleDateFormat(format);
 			return sdf.parse(dateString);
 		} catch (ParseException e) {
 			LOG.warn("Unable to parse date [dateString:" + dateString + "; format: " + format + "]", e);

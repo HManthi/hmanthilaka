@@ -23,6 +23,7 @@ public class HibernateUtil {
 			.addResource("usermanagement/domain/User.hbm.xml")
 			.addResource("branchmanagement/domain/Branch.hbm.xml")
 			.addResource("departmentmanagement/domain/Department.hbm.xml")
+			.addResource("drivermanagement/domain/Driver.hbm.xml")
 			.addResource("drivermanagement/domain/DriverType.hbm.xml")
 			;
 
