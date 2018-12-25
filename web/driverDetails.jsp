@@ -80,7 +80,7 @@
             
             <s:form theme="simple">
                 <center>
-                <table border="1" width="60%" id="myTable">
+                <table border="1" width="60%" id="myTable" class="dataTable">
                     <thead>
                         <tr>
                             <th><s:label for="driverId">Driver ID</s:label></th>

@@ -81,7 +81,7 @@
 
             <s:form theme="simple">
                 <center>
-                    <table border="1" width="55%" id="myTable">
+                    <table border="1" width="55%" id="myTable" class="dataTable">
                         <thead>
                             <tr>
                                 <th><s:label for="vehicleNo">Vehicle No</s:label></th>

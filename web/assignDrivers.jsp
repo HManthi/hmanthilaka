@@ -44,7 +44,7 @@
             <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()"></s:textfield></p>
             <br>
             <s:form theme="simple">
-                <table border="1" width="60%" id="myTable">
+                <table border="1" width="60%" id="myTable" class="dataTable">
                     <thead>
                         <tr>
                             <th><s:label for="vehicle">Vehicle</s:label></th>

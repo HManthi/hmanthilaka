@@ -59,7 +59,7 @@
             <h4>Manager Details</h4>
                 <br>
                 <s:form theme="simple">
-                <table border="1" width="60%" id="myTable">
+                <table border="1" width="60%" id="myTable" class="dataTable">
                     <thead>
                         <tr>
                             <th><s:label for="manager">Manager</s:label></th>

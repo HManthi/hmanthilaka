@@ -60,7 +60,7 @@
                 <h4>Maintenance Details</h4>
                 
                 <s:form theme="simple">
-                <table border="1" width="60%" id="myTable">
+                <table border="1" width="60%" id="myTable" class="dataTable">
                     <thead>
                         <tr>
                             <th><s:label for="vehicleNo">Vehicle No</s:label></th>

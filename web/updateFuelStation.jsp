@@ -56,7 +56,7 @@
                 <h4>Update Fuel Station Details</h4>
                 
                 <s:form theme="simple">
-                <table border="1" width="60%" id="myTable">
+                <table border="1" width="60%" id="myTable" class="dataTable">
                     <thead>
                         <tr>
                             <th><s:label for="station">Station</s:label></th>

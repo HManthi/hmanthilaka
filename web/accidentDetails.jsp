@@ -70,7 +70,7 @@
             <br>
             <s:form theme="simple">
                 <center>
-                <table border="1" width="50%" id="myTable">
+                <table border="1" width="50%" id="myTable" class="dataTable">
                     <thead>
                         <tr>
                             <th><s:label for="vehicle">Vehicle No</s:label></th>
