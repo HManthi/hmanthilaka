@@ -13,11 +13,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script type="text/javascript" src="js/noCache.js"></script>
+        <script type="text/javascript" src="js/searchBtn.js"></script>
         <link rel="stylesheet" type="text/css" href="css/normalize.css" />
         <link rel="stylesheet" type="text/css" href="css/demo.css" />
         <link rel="stylesheet" type="text/css" href="css/component.css" />
         <link rel="stylesheet" type="text/css" href="css/positionCss.css" />
         <script src="js/modernizr.custom.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/tableColor.css" />
     </head>
     <body onload="noBack();" onpageshow="if (event.persisted) noBack();" onunload="">
         <font color="white">
@@ -26,7 +28,8 @@
             <h3>Enter Accident Details</h3>
             <br>
             <s:form theme="simple" class="form-style-7"  action="register" method="post">
-                <table width="35" >
+                <s:div cssStyle="table100.ver2">
+                <table width="35">
                     <tbody>
                         <tr>
                             <td><s:label>Vehicle&nbsp;No :</s:label></td>
@@ -58,15 +61,16 @@
                         </tr>
                     </tbody>
                 </table>
+                </s:div>
             </s:form>
             <br>
             <hr>
             <br><br>
-            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="search" label="Search" key="search"></s:textfield></p>
+            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()"></s:textfield></p>
             <br>
             <s:form theme="simple">
                 <center>
-                <table border="1" width="50%">
+                <table border="1" width="50%" id="myTable">
                     <thead>
                         <tr>
                             <th><s:label for="vehicle">Vehicle No</s:label></th>
