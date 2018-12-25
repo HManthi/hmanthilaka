@@ -20,12 +20,18 @@
         <property column="created_datetime" name="createdDatetime" type="java.sql.Timestamp" />
         <property column="modified_by" name="modifiedBy" type="java.lang.String" />
         <property column="modified_datetime" name="modifiedDatetime" type="java.sql.Timestamp" />
+
+        <property column="driver_type" name="driverType" type="java.lang.String" insert="false" update="false"/>
     </class>
 
     <sql-query name="fetchDrivers">
         <return class="Driver" alias="dr"/>
         SELECT
-            dr.*
+            dr.*,
+            ll.lookup_list_code as driver_type
           FROM transport_hub.driver_details dr
+          left outer join transport_hub.lookup_list ll
+            on ll.lookup_list_id = dr.driver_type_id
+          order by dr.driver_id
     </sql-query>
 </hibernate-mapping>

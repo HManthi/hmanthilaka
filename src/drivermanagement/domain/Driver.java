@@ -15,6 +15,9 @@ public class Driver extends AbstractBaseEntity {
 	private Date issueDate;
 	private Date expireDate;
 
+	//joined fields
+	private String driverType;
+
 	@Override
 	public Object getEntityId() {
 		return getDriverId();
@@ -90,5 +93,13 @@ public class Driver extends AbstractBaseEntity {
 
 	public void setExpireDate(Date expireDate) {
 		this.expireDate = expireDate;
+	}
+
+	public String getDriverType() {
+		return driverType;
+	}
+
+	public void setDriverType(String driverType) {
+		this.driverType = driverType;
 	}
 }

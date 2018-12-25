@@ -13,9 +13,17 @@ import java.util.List;
 public class DriverDaoHibernate implements DriverDao {
 	private Logger LOG = Logger.getLogger(DriverDaoHibernate.class);
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List fetchDrivers() {
-		return null;
+		List<Driver> driverList;
+
+		try (Session session = HibernateUtil.getSessionFactory().openSession()) {
+
+			Query query = session.getNamedQuery("fetchDrivers");
+			driverList = query.list();
+		}
+		return driverList;
 	}
 
 	@SuppressWarnings("unchecked")

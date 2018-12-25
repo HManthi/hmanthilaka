@@ -96,6 +96,19 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <s:iterator value="driverList" var="driver">
+                            <tr>
+                                 <th><s:property value="#driver.driverId" /></th>
+                                 <th><s:property value="#driver.driverName" /></th>
+                                 <th><s:property value="#driver.address" /></th>
+                                 <th><s:property value="#driver.contactNum" /></th>
+                                 <th><s:property value="#driver.driverType" /></th>
+                                 <th><s:property value="#driver.licenseNum" /></th>
+                                 <th><s:date name="#driver.issueDate" format="MM/dd/yyyy" /></th>
+                                 <th><s:date name="#driver.expireDate" format="MM/dd/yyyy" /></th>
+                                 <th><s:submit value="Edit"/></th>
+                            </tr>
+                        </s:iterator>
                     </tbody>
                 </table>
                 </center>

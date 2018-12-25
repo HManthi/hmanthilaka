@@ -3,7 +3,7 @@ package drivermanagement.web;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
-import common.util.CommonUtil;
+
 import common.util.DateTimeUtil;
 import drivermanagement.domain.Driver;
 import drivermanagement.domain.DriverType;
@@ -27,6 +27,7 @@ public class DriverAction extends ActionSupport implements ServletRequestAware, 
 
 	public DriverAction() {
 		setDriverTypes(driverManager.getDriverTypes());
+		setDriverList(driverManager.fetchDrivers());
 	}
 
 	@Override
@@ -88,6 +89,7 @@ public class DriverAction extends ActionSupport implements ServletRequestAware, 
 			driverManager.addDriver(newDriver);
 
 			setDriverTypes(driverManager.getDriverTypes());
+			setDriverList(driverManager.fetchDrivers());
 			return SUCCESS;
 		}
 
