@@ -26,7 +26,7 @@
                                 <li><s:a class="gn-icon gn-icon-cog" href="assignManager.jsp">&nbsp;&nbsp;<img src="images/manager.png" height="24" width="24"/>&nbsp;&nbsp;Assign Manager</s:a></li>
                                 <li><s:a class="gn-icon gn-icon-cog" href="branchFetch">&nbsp;&nbsp;<img src="images/branch.png" height="24" width="24"/>&nbsp;&nbsp;Branch Details</s:a></li>
                                 <li><s:a class="gn-icon gn-icon-cog" href="departmentFetch">&nbsp;&nbsp;<img src="images/department.png" height="24" width="24"/>&nbsp;&nbsp;Department Details</s:a></li>
-                                <li><s:a class="gn-icon gn-icon-cog" href="driverDetails.jsp">&nbsp;&nbsp;<img src="images/driver_details.png" height="24" width="24"/>&nbsp;&nbsp;Driver Details</s:a></li>
+                                <li><s:a class="gn-icon gn-icon-cog" href="driver">&nbsp;&nbsp;<img src="images/driver_details.png" height="24" width="24"/>&nbsp;&nbsp;Driver Details</s:a></li>
                                 <li><s:a class="gn-icon gn-icon-cog" href="emissonDetails.jsp">&nbsp;&nbsp;<img src="images/emission.png" height="24" width="24"/>&nbsp;&nbsp;Emisson Details</s:a></li>
                                 <li><s:a class="gn-icon gn-icon-cog" href="endTripDetails.jsp">&nbsp;&nbsp;<img src="images/endtrip.png" height="24" width="24"/>&nbsp;&nbsp;End Trip Details</s:a></li>
                                 <li><s:a class="gn-icon gn-icon-cog" href="fuelStationDetails.jsp">&nbsp;&nbsp;<img src="images/fuelstation.png" height="24" width="24"/>&nbsp;&nbsp;Fuel Station Details</s:a></li>
