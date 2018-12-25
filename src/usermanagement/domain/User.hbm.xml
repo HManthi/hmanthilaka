@@ -19,6 +19,10 @@
         <property column="password" name="password" type="java.lang.String" />
         <property column="birth_date" name="birthday" type="java.util.Date" />
         <property column="email" name="email" type="java.lang.String" />
+        <property column="created_by" name="createdBy" type="java.lang.String" />
+        <property column="created_datetime" name="createdDatetime" type="java.sql.Timestamp" />
+        <property column="modified_by" name="modifiedBy" type="java.lang.String" />
+        <property column="modified_datetime" name="modifiedDatetime" type="java.sql.Timestamp" />
     </class>
 
     <sql-query name="getAuthenticateUser">

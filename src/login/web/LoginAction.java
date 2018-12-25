@@ -39,8 +39,9 @@ public class LoginAction extends ActionSupport implements ModelDriven<User> {
 	}
 
 	public String userLogin() {
-		User loginUser = loginService.authenticateUser(user);
 		LOG.info("User name n pwd = " + user.getUserName() + " - " + user.getPassword());
+
+		User loginUser = loginService.authenticateUser(user);
 
 		if (loginUser != null) {
 			LOG.info(loginUser.getUserName() + " - successfully logged in");

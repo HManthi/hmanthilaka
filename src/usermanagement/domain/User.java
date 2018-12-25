@@ -2,7 +2,6 @@ package usermanagement.domain;
 
 import common.domain.AbstractBaseEntity;
 
-import java.io.Serializable;
 import java.util.Date;
 
 public class User extends AbstractBaseEntity {
