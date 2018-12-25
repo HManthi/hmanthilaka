@@ -12,7 +12,7 @@
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<script src="js/modernizr.custom.js"></script>
-
+                <script type="text/javascript" src="js/searchBtn.js"></script>
 
 </head>
 
@@ -76,11 +76,11 @@
             <h4>User Details</h4>
 
             <br>
-            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="search" label="Search" key="search"></s:textfield></p>
+            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()"></s:textfield></p>
 
             <br>
             <s:form theme="simple">
-                <table border="1" width="60%">
+                <table border="1" width="60%" id="myTable">
                     <thead>
                         <tr>
                             <th><s:label for="userName">User Name</s:label></th>

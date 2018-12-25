@@ -21,7 +21,7 @@
         <script src="js/datePicker.js"></script>
         <script type="text/javascript" src="js/noCache.js"></script>
         <sj:head/>
-        
+        <script type="text/javascript" src="js/searchBtn.js"></script>
     </head>
     <body onload="noBack();" onpageshow="if (event.persisted) noBack();" onunload="">
         <font color="white">
@@ -75,12 +75,12 @@
             <hr>
             <h4>Driver Details</h4>
             <br>
-            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="search" label="Search" key="search"></s:textfield></p>
+            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()"></s:textfield></p>
             <br>
             
             <s:form theme="simple">
                 <center>
-                <table border="1" width="60%">
+                <table border="1" width="60%" id="myTable">
                     <thead>
                         <tr>
                             <th><s:label for="driverId">Driver ID</s:label></th>

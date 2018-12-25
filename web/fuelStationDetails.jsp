@@ -19,6 +19,7 @@
         <link rel="stylesheet" type="text/css" href="css/component.css" />
         <link rel="stylesheet" type="text/css" href="css/positionCss.css" />
         <script src="js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="js/searchBtn.js"></script>
     </head>
     <body onload="noBack();" onpageshow="if(event.persisted) noBack();" onunload="">
         <font color="white">
@@ -59,11 +60,11 @@
             <br>
                 <hr>
                 <br>
-                <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="search" label="Search" key="search"></s:textfield></p>
+                <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()"></s:textfield></p>
                 <h4>Fuel Station Details</h4>
                 
                 <s:form theme="simple">
-                <table border="1" width="60%">
+                <table border="1" width="60%" id="myTable">
                     <thead>
                         <tr>
                             <th><s:label for="stationName">Station Name</s:label></th>
