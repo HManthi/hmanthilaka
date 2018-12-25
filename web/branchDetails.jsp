@@ -28,8 +28,25 @@
             <br>
 
             <s:form theme="simple" action="branchAdd" method="POST">
-                <s:textfield id="branchName" label="Name" key="branchName"></s:textfield>
-                <s:submit value="Save"></s:submit>&nbsp;<s:submit value="Clean"></s:submit>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><s:label>Branch Name :</s:label></td>
+                            <td><s:textfield id="branchName" label="Name" key="branchName"></s:textfield></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><s:submit value="Save"></s:submit>&nbsp;<s:submit value="Clean"></s:submit></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                
+                
             </s:form>
                 <hr>
             <br>
