@@ -33,7 +33,7 @@
                     <tbody>
                         <tr>
                             <td><s:label>Branch Name :</s:label></td>
-                            <td><s:textfield id="branchName" label="Name" key="branchName"></s:textfield></td>
+                            <td><s:textfield id="branchName" label="Name" key="branchName" onkeyup="this.value = this.value.toUpperCase();"></s:textfield></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
