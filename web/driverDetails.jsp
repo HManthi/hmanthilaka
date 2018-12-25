@@ -29,13 +29,9 @@
         <center>
             <h3>Enter Driver Details</h3>
             <br>
-            <s:form theme="simple" class="form-style-7"  action="register" method="post">
+            <s:form theme="simple" class="form-style-7"  action="driverAction!driverAdd.action" method="post">
                 <table width="400">
                 <tbody>
-                        <tr>
-                            <td><s:label>Driver&nbsp;ID :</s:label></td>
-                            <td><s:textfield id="driverId" key="driverId"></s:textfield></td>
-                        </tr>
                         <tr>
                             <td><s:label>Name :</s:label></td>
                             <td><s:textfield id="driverName" key="driverName"></s:textfield></td>
@@ -54,7 +50,12 @@
                         </tr>
                         <tr>
                             <td><s:label>Gender :</s:label></td>
-                            <td><s:radio name = "gender" list="{'Male','Female'}" /></td>
+                            <td><s:radio name = "gender" list="{'MALE','FEMALE'}" /></td>
+                        </tr>
+                        <tr>
+                            <td><s:label>Type :</s:label></td>
+                            <td><s:select name="driverTypes" list="driverTypes" listKey="driverTypeId" listValue="driverType"/>
+                            </td>
                         </tr>
                         <tr>
                         <td><s:label>Issue&nbsp;Date :</s:label></td>

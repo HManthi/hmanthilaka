@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="drivermanagement.domain">
+
+    <class name="DriverType">
+        <id name="driverTypeId" column="driver_type_id"/>
+        <property name="driverType" column="driver_type"/>
+
+    </class>
+
+    <sql-query name="getDriverTypes">
+        <return class="DriverType" alias="dt"/>
+        select
+            ll.lookup_list_id as driver_type_id,
+            ll.lookup_list_code as driver_type
+          from transport_hub.lookup_list ll
+          left outer join transport_hub.lookup_list_category llc
+            on llc.lookup_list_category_id = ll.lookup_list_category_id
+          where (llc.lookup_list_category_code = 'DRIVER_TYPE')
+          order by ll.lookup_list_code asc
+    </sql-query>
+
+</hibernate-mapping>
