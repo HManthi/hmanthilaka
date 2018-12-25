@@ -40,8 +40,9 @@
                 </s:form>
             <br>
                 <hr>
-                
-                <h4>Department Details</h4>
+            <br>
+            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="search" label="Search" key="search"></s:textfield></p>
+            <h4>Department Details</h4>
                 
                 <s:form theme="simple">
                 <table border="1" width="60%">
