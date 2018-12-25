@@ -64,8 +64,10 @@ public class UserAction extends ActionSupport implements ServletRequestAware, Mo
 			newUser.setPassword(getServletRequest().getParameter("password"));
 			newUser.setEncPassword(CommonUtil.getHash(getServletRequest().getParameter("password")));
 //			newUser.setRoleId(Long.valueOf(getServletRequest().getParameter("roleId")));
-			newUser.setEmail(getServletRequest().getParameter("email"));
+//			newUser.setEmail(getServletRequest().getParameter("email"));
 			newUser.setPhone(getServletRequest().getParameter("phone"));
+			newUser.setCreatedBy(String.valueOf(session.get("userName")));
+			newUser.setCreatedDatetime(DateTimeUtil.getSystemDate());
 //			newUser.setBirthday(DateTimeUtil.parseDate(getServletRequest().getParameter("birthday"), "MM/dd/yyyy"));
 //			newUser.setDepartmentId(Long.valueOf(getServletRequest().getParameter("departmentId")));
 //			newUser.setBranchId(Long.valueOf(getServletRequest().getParameter("branchId")));
