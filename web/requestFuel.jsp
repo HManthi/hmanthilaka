@@ -54,6 +54,8 @@
             </s:form>
             <br>
                 <hr>
+                <br>
+                <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="search" label="Search" key="search"></s:textfield></p>
                 <h4>Request Fuel Details</h4>
                 
                 <s:form theme="simple">
