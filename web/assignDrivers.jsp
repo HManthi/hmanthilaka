@@ -27,8 +27,8 @@
             <h3>Assign Driver</h3>
             <br>
             <s:form theme="simple" class="form-style-7" action="register" method="post">
-                <s:label>Vehicle No :</s:label><s:textarea id="vehicleNo" key="vehicleNo"></s:textarea><br>
-                <s:label>Driver :</s:label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textarea id="driver" key="driver"></s:textarea><br><br>
+                <s:label>Vehicle No :</s:label><s:textarea id="vehicleNo" key="vehicleNo" style="text-transform:uppercase"></s:textarea><br>
+                <s:label>Driver :</s:label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textarea id="driver" key="driver" style="text-transform:uppercase"></s:textarea><br><br>
                 <table width="25" class=".TFtable">
                     <tbody>
                         <tr>
@@ -41,7 +41,7 @@
             <br>
             <hr>
             <br><br>
-            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()"></s:textfield></p>
+            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()" style="text-transform:uppercase"></s:textfield></p>
             <br>
             <s:form theme="simple">
                 <table border="1" width="60%" id="myTable" class="dataTable">
