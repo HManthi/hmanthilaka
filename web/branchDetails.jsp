@@ -33,7 +33,7 @@
                     <tbody>
                         <tr>
                             <td><s:label>Branch Name :</s:label></td>
-                            <td><s:textfield id="branchName" label="Name" key="branchName" onkeyup="this.value = this.value.toUpperCase();"></s:textfield></td>
+                            <td><s:textfield id="branchName" label="Name" key="branchName" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
@@ -51,7 +51,7 @@
             </s:form>
                 <hr>
             <br>
-            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()"></s:textfield></p>
+            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()" style="text-transform:uppercase"></s:textfield></p>
             <h4>Branch Details</h4>
                 
                 <s:form theme="simple">
