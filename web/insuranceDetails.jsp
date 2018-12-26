@@ -34,25 +34,25 @@
                     <tbody>
                         <tr>
                             <td><s:label>Vehicle No :</s:label></td>
-                            <td><s:textfield id="vehicleNo" key="vehicleNo"></s:textfield></td>
+                            <td><s:textfield id="vehicleNo" key="vehicleNo" style="text-transform:uppercase"></s:textfield></td>
                             <td><s:label>Company :</s:label></td>
-                            <td><s:textfield id="company" key="company"></s:textfield></td>
+                            <td><s:textfield id="company" key="company" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Policy No :</s:label></td>
-                            <td><s:textfield id="licyNo" key="policyNo"></s:textfield></td>
+                            <td><s:textfield id="licyNo" key="policyNo" style="text-transform:uppercase"></s:textfield></td>
                             <td><s:label>Period of Cover :</s:label></td>
                             <td><sj:datepicker id="periodCover"></sj:datepicker></td>
                         </tr>
                         <tr>
                             <td><s:label>Policy Holder :</s:label></td>
-                            <td><s:textfield id="policyHolder" key="policyHolder"></s:textfield></td>
+                            <td><s:textfield id="policyHolder" key="policyHolder" style="text-transform:uppercase"></s:textfield></td>
                             <td><s:label>Issue Date :</s:label></td>
                             <td><sj:datepicker id="issueDate"></sj:datepicker></td>
                         </tr>
                         <tr>
                             <td><s:label>Price :</s:label></td>
-                            <td><s:textfield id="price" key="price"></s:textfield></td>
+                            <td><s:textfield id="price" key="price" style="text-transform:uppercase"></s:textfield></td>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
                         </tr>
@@ -76,7 +76,7 @@
             <hr>
             <h4>Insurance Details</h4>
             <br>
-            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()"></s:textfield></p>
+            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()" style="text-transform:uppercase"></s:textfield></p>
                 <br>
 
             <s:form theme="simple">
