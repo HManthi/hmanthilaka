@@ -34,15 +34,15 @@
                     <tbody>
                         <tr>
                             <td><s:label>Parent Navigation Name :</s:label></td>
-                            <td><s:select id="parentNavigationName" list="{'awedfddffd','ewredffdfdfdf'}"></s:select></td>
+                            <td><s:select id="parentNavigationName" list="{'awedfddffd','ewredffdfdfdf'}" style="text-transform:uppercase"></s:select></td>
                         </tr>
                         <tr>
                             <td><s:label>Navigation Name :</s:label></td>
-                            <td><s:textfield id="navigationName" key="navigationName"></s:textfield></td>
+                            <td><s:textfield id="navigationName" key="navigationName" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Navigation Name(.ASPX) :</s:label></td>
-                            <td><s:select id="parentNavigationNameAspx" list="{'aweddfdfdf','ewredfdfdfdff'}"></s:select></td>
+                            <td><s:select id="parentNavigationNameAspx" list="{'aweddfdfdf','ewredfdfdfdff'}" style="text-transform:uppercase"></s:select></td>
                         </tr>
                         <tr>
                          <td><s:label>Active</s:label></td>
@@ -64,7 +64,7 @@
             <hr>
             <h4>Navigation Details</h4>
             <br>
-            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()"></s:textfield></p>
+            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()" style="text-transform:uppercase"></s:textfield></p>
                 <br>
 
             <s:form theme="simple">
