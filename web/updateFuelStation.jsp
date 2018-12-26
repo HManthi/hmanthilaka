@@ -32,15 +32,15 @@
                     <tbody>
                         <tr>
                             <td><s:label>Station :</s:label></td>
-                            <td><s:select list="{'AAA','BBB','CCC'}"></s:select></td>
+                            <td><s:select list="{'AAA','BBB','CCC'}" style="text-transform:uppercase"></s:select></td>
                         </tr>
                         <tr>
                             <td><s:label>Cash In :</s:label></td>
-                            <td><s:textfield id="cashIn" key="cashIn"></s:textfield></td>
+                            <td><s:textfield id="cashIn" key="cashIn" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Current Deposits :</s:label></td>
-                            <td><s:textfield id="currentDeposits" key="currentDeposits"></s:textfield></td>
+                            <td><s:textfield id="currentDeposits" key="currentDeposits" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
@@ -52,7 +52,7 @@
             <br>
                 <hr>
                 <br>
-                <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()"></s:textfield></p>
+                <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()" style="text-transform:uppercase"></s:textfield></p>
                 <h4>Update Fuel Station Details</h4>
                 
                 <s:form theme="simple">

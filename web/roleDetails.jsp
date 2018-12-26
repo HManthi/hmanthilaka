@@ -28,7 +28,7 @@
                         <tbody>
                             <tr>
                                 <td><s:label>Role Name :</s:label></td>
-                                <td><s:textfield id="roleName" key="roleName" ></s:textfield></td>
+                                <td><s:textfield id="roleName" key="roleName" style="text-transform:uppercase"></s:textfield></td>
                             </tr>
                             <tr>
                                 <td>&nbsp;</td>
@@ -43,7 +43,7 @@
             <h4>Role Details</h4>
 
             <br>
-            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()"></s:textfield></p>
+            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()" style="text-transform:uppercase"></s:textfield></p>
 
             <s:form theme="simple">
                 <table border="1" width="60%" id="myTable" class="dataTable">

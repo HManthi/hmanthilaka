@@ -35,27 +35,27 @@
                     <tbody>
                         <tr>
                             <td><s:label>Reason :</s:label></td>
-                            <td><s:textfield id="reason" key="reason"></s:textfield></td>
+                            <td><s:textfield id="reason" key="reason" style="text-transform:uppercase"></s:textfield></td>
                             <td><s:label>Location :</s:label></td>
-                            <td><s:textfield id="location" key="location"></s:textfield></td>
+                            <td><s:textfield id="location" key="location" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Department :</s:label></td>
-                            <td><s:select id="department" list="{'sdsdsdsds','sdsdsdsdsdsd'}"></s:select></td>
+                            <td><s:select id="department" list="{'sdsdsdsds','sdsdsdsdsdsd'}" style="text-transform:uppercase"></s:select></td>
                             <td><s:label>Details :</s:label></td>
-                            <td><s:textfield id="details" key="details"></s:textfield></td>
+                            <td><s:textfield id="details" key="details" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Status :</s:label></td>
-                            <td><s:select  list="{'sdsdsdsds','sdsdsdsdsdsd'}"></s:select></td>
+                            <td><s:select  list="{'sdsdsdsds','sdsdsdsdsdsd'}" style="text-transform:uppercase"></s:select></td>
                             <td><s:label>Reason :</s:label></td>
-                            <td><s:textfield id="statusReason" key="statusReason"></s:textfield></td>
+                            <td><s:textfield id="statusReason" key="statusReason" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Date Time :</s:label></td>
                             <td><sj:datepicker id="dateTime"></sj:datepicker></td>
                             <td><s:label>Pickup Location :</s:label></td>
-                            <td><s:textfield id="pickupLocation" key="pickupLocation"></s:textfield></td>
+                            <td><s:textfield id="pickupLocation" key="pickupLocation" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
@@ -77,7 +77,7 @@
             <hr>
             <h4>Trip Request Details</h4>
             <br>
-            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()"></s:textfield></p>
+            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()" style="text-transform:uppercase"></s:textfield></p>
                 <br>
 
             <s:form theme="simple">
