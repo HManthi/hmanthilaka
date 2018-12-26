@@ -38,20 +38,20 @@
                             <td><s:label>Branch :</s:label></td>
                             <td><s:select list="{'aaa','ddddd'}" style="text-transform:uppercase"></s:select></td>
                             <td><s:label>Vehicle&nbsp;No :</s:label></td>
-                            <td><s:textfield id="vehicleNo" key="vehicleNo" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="vehicleNo" key="vehicleNo" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                             </tr>
                             <tr>
                             <td><s:label>Manufactured&nbsp;Year :</s:label></td>
                             <td><s:textfield id="manifacturedYear" key="manifacturedYear"></s:textfield></td>
                             <td><s:label>Type :</s:label></td>
-                            <td><s:textfield id="type" key="type" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="type" key="type" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                             </tr>
 
                             <tr>
                             <td><s:label>Brand :</s:label></td>
-                            <td><s:textfield id="brand" key="brand" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="brand" key="brand" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                             <td><s:label>Model :</s:label></td>
-                            <td><s:textfield id="model" key="model" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="model" key="model" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                             </tr>
 
                             <tr>
@@ -63,16 +63,16 @@
 
                             <tr>
                             <td><s:label>Owner :</s:label></td>
-                            <td><s:textfield id="owner" key="owner" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="owner" key="owner" style="text-transform:uppercase" maxLength="100"></s:textfield></td>
                             <td><s:label>Address :</s:label></td>
-                            <td><s:textfield id="address" key="address" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="address" key="address" style="text-transform:uppercase" maxLength="100"></s:textfield></td>
                             </tr>
 
                             <tr>
                             <td><s:label>Contact No :</s:label></td>
                             <td><s:textfield id="contactNo" key="contactNo" onkeypress="return isNumber(event)" maxlength="10"></s:textfield></td>
                             <td><s:label>Vender :</s:label></td>
-                            <td><s:textfield id="vender" key="vender" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="vender" key="vender" style="text-transform:uppercase" maxLength="100"></s:textfield></td>
                             </tr>
 
                             <tr>

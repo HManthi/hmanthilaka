@@ -33,15 +33,15 @@
                     <tbody>
                         <tr>
                             <td><s:label>Station Name :</s:label></td>
-                            <td><s:textfield id="stationName" key="stationName" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="stationName" key="stationName" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Location :</s:label></td>
-                            <td><s:textfield id="location" key="location" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="location" key="location" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Owner :</s:label></td>
-                            <td><s:textfield id="owner" key="owner" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="owner" key="owner" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Contact No :</s:label></td>
@@ -49,7 +49,7 @@
                         </tr>
                         <tr>
                             <td><s:label>Price :</s:label></td>
-                            <td><s:textfield id="price" key="price" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="price" key="price" style="text-transform:uppercase" ></s:textfield></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>

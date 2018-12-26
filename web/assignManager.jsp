@@ -18,6 +18,7 @@
         <link rel="stylesheet" type="text/css" href="css/component.css" />
         <link rel="stylesheet" type="text/css" href="css/positionCss.css" />
         <script src="js/modernizr.custom.js"></script>
+        <script src="js/textNumber.js"></script>
         <script type="text/javascript" src="js/searchBtn.js"></script>
     </head>
     <body onload="noBack();" onpageshow="if(event.persisted) noBack();" onunload="">
@@ -31,19 +32,19 @@
                     <tbody>
                         <tr>
                             <td><s:label>Manager :</s:label></td>
-                            <td><s:textfield id="manager" key="manager" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="manager" key="manager" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Vehicle No :</s:label></td>
-                            <td><s:textfield id="vehicleNo" key="vehicleNo" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="vehicleNo" key="vehicleNo" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Driver :</s:label></td>
-                            <td><s:textfield id="driver" key="driver" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="driver" key="driver" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Contact :</s:label></td>
-                            <td><s:textfield id="contact" key="contact" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="contact" key="contact" onkeypress="return isNumber(event)" maxlength="10"></s:textfield></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>

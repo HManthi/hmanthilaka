@@ -28,7 +28,7 @@
             <h3>Enter Department Details</h3>
             <br>
             <s:form theme="simple" action="branchAdd" method="POST">
-                <s:label>Name :</s:label>&nbsp;<s:textfield id="name" label="Name" key="name" style="text-transform:uppercase"></s:textfield><br><br>
+                <s:label>Name :</s:label>&nbsp;<s:textfield id="name" label="Name" key="name" style="text-transform:uppercase" maxLength="100"></s:textfield><br><br>
                 <table width="25">
                     <thead>
                     <tbody>

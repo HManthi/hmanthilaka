@@ -34,19 +34,19 @@
                     <tbody>
                         <tr>
                             <td><s:label>Vehicle No :</s:label></td>
-                            <td><s:textfield id="vehicleNo" key="vehicleNo" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="vehicleNo" key="vehicleNo" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                             <td><s:label>Company :</s:label></td>
-                            <td><s:textfield id="company" key="company" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="company" key="company" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Policy No :</s:label></td>
-                            <td><s:textfield id="licyNo" key="policyNo" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="licyNo" key="policyNo" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                             <td><s:label>Period of Cover :</s:label></td>
                             <td><sj:datepicker id="periodCover"></sj:datepicker></td>
                         </tr>
                         <tr>
                             <td><s:label>Policy Holder :</s:label></td>
-                            <td><s:textfield id="policyHolder" key="policyHolder" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="policyHolder" key="policyHolder" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                             <td><s:label>Issue Date :</s:label></td>
                             <td><sj:datepicker id="issueDate"></sj:datepicker></td>
                         </tr>

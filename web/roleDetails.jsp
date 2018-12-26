@@ -28,7 +28,7 @@
                         <tbody>
                             <tr>
                                 <td><s:label>Role Name :</s:label></td>
-                                <td><s:textfield id="roleName" key="roleName" style="text-transform:uppercase"></s:textfield></td>
+                                <td><s:textfield id="roleName" key="roleName" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                             </tr>
                             <tr>
                                 <td>&nbsp;</td>

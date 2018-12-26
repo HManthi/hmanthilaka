@@ -36,7 +36,7 @@
                             <td><s:label>Vehicle No :</s:label></td>
                             <td><s:textfield id="vehicleNo" key="vehicleNo" style="text-transform:uppercase"></s:textfield></td>
                             <td><s:label>License No :</s:label></td>
-                            <td><s:textfield id="licenseNo" key="licenseNo" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="licenseNo" key="licenseNo" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Valid Period :</s:label></td>
@@ -48,7 +48,7 @@
                             <td><s:label>Annual Fee :</s:label></td>
                             <td><s:textfield id="annualFee" key="annualFee" style="text-transform:uppercase"></s:textfield></td>
                             <td><s:label>Arrears :</s:label></td>
-                            <td><s:textfield id="arrears" key="arrears" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="arrears" key="arrears" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Fines :</s:label></td>

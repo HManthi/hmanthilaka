@@ -32,23 +32,23 @@
                     <tbody>
                         <tr>
                             <td><s:label>Vehicle No :</s:label></td>
-                            <td><s:textfield id="vehicleNo" key="vehicleNo" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="vehicleNo" key="vehicleNo" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Company :</s:label></td>
-                            <td><s:select list="{'ABC','DEF'}" style="text-transform:uppercase"></s:select></td>
+                            <td><s:select list="{'ABC','DEF'}" style="text-transform:uppercase" maxLength="45"></s:select></td>
                         </tr>
                         <tr>
                             <td><s:label>Serial No :</s:label></td>
-                            <td><s:textfield id="serialNo"  key="serialNo" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="serialNo"  key="serialNo" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Status :</s:label></td>
-                            <td><s:select list="{'AAA','BBB','CCC'}" style="text-transform:uppercase"></s:select></td>
+                            <td><s:select list="{'AAA','BBB','CCC'}" style="text-transform:uppercase" maxLength="45"></s:select></td>
                         </tr>
                         <tr>
                             <td><s:label>Valid Period :</s:label></td>
-                            <td><s:textfield id="validPeriod" key="validPeriod" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="validPeriod" key="validPeriod" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>

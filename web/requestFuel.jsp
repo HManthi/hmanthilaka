@@ -36,11 +36,11 @@
                         </tr>
                         <tr>
                             <td><s:label>Request Name :</s:label></td>
-                            <td><s:textfield id="requestName" key="requestName" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="requestName" key="requestName" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Station :</s:label></td>
-                            <td><s:select list="{'AAA','BBB','CCC'}" style="text-transform:uppercase"></s:select></td>
+                            <td><s:select list="{'aaa','BBB','sss'}" style="text-transform:uppercase" ></s:select></td>
                         </tr>
                         <tr>
                             <td><s:label>Balance :</s:label></td>

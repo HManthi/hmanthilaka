@@ -34,15 +34,15 @@
                     <tbody>
                         <tr>
                             <td><s:label>Parent Navigation Name :</s:label></td>
-                            <td><s:select id="parentNavigationName" list="{'awedfddffd','ewredffdfdfdf'}" style="text-transform:uppercase"></s:select></td>
+                            <td><s:select id="parentNavigationName" list="{'awedfddffd','ewredffdfdfdf'}" style="text-transform:uppercase" maxLength="45"></s:select></td>
                         </tr>
                         <tr>
                             <td><s:label>Navigation Name :</s:label></td>
-                            <td><s:textfield id="navigationName" key="navigationName" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="navigationName" key="navigationName" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Navigation Name(.ASPX) :</s:label></td>
-                            <td><s:select id="parentNavigationNameAspx" list="{'aweddfdfdf','ewredfdfdfdff'}" style="text-transform:uppercase"></s:select></td>
+                            <td><s:select id="parentNavigationNameAspx" list="{'aweddfdfdf','ewredfdfdfdff'}" style="text-transform:uppercase" maxLength="45"></s:select></td>
                         </tr>
                         <tr>
                          <td><s:label>Active</s:label></td>

@@ -39,11 +39,11 @@
                         </tr>
                         <tr>
                             <td><s:label>Name :</s:label></td>
-                            <td><s:textfield id="driverName" key="driverName" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="driverName" key="driverName" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Address :</s:label></td>
-                            <td><s:textfield id="address" key="address" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="address" key="address" style="text-transform:uppercase" maxLength="100"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Contact&nbsp;No :</s:label></td>
@@ -51,7 +51,7 @@
                         </tr>
                         <tr>
                             <td><s:label>License&nbsp;No :</s:label></td>
-                            <td><s:textfield id="licenseNo" key="licenseNo" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="licenseNo" key="licenseNo" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Gender :</s:label></td>

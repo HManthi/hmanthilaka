@@ -41,15 +41,15 @@
                         </tr>
                         <tr>
                             <td><s:label>Driver Name :</s:label></td>
-                            <td><s:textfield id="driverName" key="driverName" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="driverName" key="driverName" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>From :</s:label></td>
-                            <td><s:textfield id="from" key="from" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="from" key="from" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>To :</s:label></td>
-                            <td><s:textfield id="to" key="to" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="to" key="to" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>

@@ -33,27 +33,27 @@
                     <tbody>
                         <tr>
                             <td><s:label>Vehicle&nbsp;No :</s:label></td>
-                            <td><s:textfield id="vehicleNo" label="Vehicle No" key="vehicleNo" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="vehicleNo" label="Vehicle No" key="vehicleNo" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Driver :</s:label></td>
-                            <td><s:textfield id="driver" key="driver" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="driver" key="driver" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Reason :</s:label></td>
-                            <td><s:textfield id="reason" key="reason" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="reason" key="reason" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Cost :</s:label></td>
-                            <td><s:textfield id="cost" key="cost"></s:textfield></td>
+                            <td><s:textfield id="cost" key="cost"></s:textfield maxLength="45"></td>
                         </tr>
                         <tr>
                             <td><s:label>Location :</s:label></td>
-                            <td><s:textfield id="location" key="location" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="location" key="location" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Claim&nbsp;Amount :</s:label></td>
-                            <td><s:textfield id="claimAmount" key="claimAmount"></s:textfield></td>
+                            <td><s:textfield id="claimAmount" key="claimAmount" maxLength="45"></s:textfield></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>

@@ -27,8 +27,8 @@
             <h3>Assign Driver</h3>
             <br>
             <s:form theme="simple" class="form-style-7" action="register" method="post">
-                <s:label>Vehicle No :</s:label><s:textarea id="vehicleNo" key="vehicleNo" style="text-transform:uppercase"></s:textarea><br>
-                <s:label>Driver :</s:label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textarea id="driver" key="driver" style="text-transform:uppercase"></s:textarea><br><br>
+                <s:label>Vehicle No :</s:label><s:textarea id="vehicleNo" key="vehicleNo" style="text-transform:uppercase" maxLength="45"></s:textarea><br>
+                <s:label>Driver :</s:label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textarea id="driver" key="driver" style="text-transform:uppercase" maxLength="45"></s:textarea><br><br>
                 <table width="25" class=".TFtable">
                     <tbody>
                         <tr>

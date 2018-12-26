@@ -30,21 +30,21 @@
                <tbody>
                    <tr>
                        <td><s:label>User Name :</s:label></td>
-                       <td><s:textfield id="userName" key="userName" style="text-transform:uppercase"></s:textfield></td>
+                       <td><s:textfield id="userName" key="userName" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                        <td><s:label>First Name :</s:label></td>
-                       <td><s:textfield id="firstName" key="firstName" style="text-transform:uppercase"></s:textfield></td>
+                       <td><s:textfield id="firstName" key="firstName" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                    </tr>
                    <tr>
                        <td><s:label>Last Name :</s:label></td>
-                       <td><s:textfield id="lastName" key="lastName" style="text-transform:uppercase"></s:textfield></td>
+                       <td><s:textfield id="lastName" key="lastName" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                        <td><s:label>Password :</s:label></td>
-                       <td><s:textfield id="password" key="password"></s:textfield></td>
+                       <td><s:textfield id="password" key="password" maxLength="45"></s:textfield></td>
                    </tr>
                    <tr>
                        <td><s:label>Contact No :</s:label></td>
                        <td><s:textfield id="contactNo" key="contactNo" onkeypress="return isNumber(event)" maxlength="10"></s:textfield></td>
                        <td><s:label>Role :</s:label></td>
-                       <td><s:select id="role" list="{'AAAA','FFFFF','RRRRRR'}" style="text-transform:uppercase"></s:select></td>
+                       <td><s:select id="role" list="{'AAAA','FFFFF','RRRRRR'}" style="text-transform:uppercase" maxLength="45"></s:select></td>
                        
                    </tr>
                    <tr>

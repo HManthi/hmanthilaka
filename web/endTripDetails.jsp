@@ -40,15 +40,15 @@
                         </tr>
                         <tr>
                             <td><s:label>Start Mileage :</s:label></td>
-                            <td><s:textfield id="startMileage" key="startMileage" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="startMileage" key="startMileage" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>End Mileage :</s:label></td>
-                            <td><s:textfield id="endtMileage" key="endMileage" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="endtMileage" key="endMileage" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>End Time :</s:label></td>
-                            <td><s:textfield id="endTime" key="endTime" style="text-transform:uppercase"></s:textfield></td>
+                            <td><s:textfield id="endTime" key="endTime" style="text-transform:uppercase" maxLength="45"></s:textfield></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>

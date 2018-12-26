@@ -40,11 +40,11 @@
                         </tr>
                         <tr>
                             <td><s:label>Reason :</s:label></td>
-                            <td><s:textarea id="reason" key="reason" rows="3" style="text-transform:uppercase"></s:textarea></td>
+                            <td><s:textarea id="reason" key="reason" rows="3" style="text-transform:uppercase" maxLength="45"></s:textarea></td>
                         </tr>
                         <tr>
                             <td><s:label>Details :</s:label></td>
-                            <td><s:textarea id="details" key="details" rows="3" style="text-transform:uppercase"></s:textarea></td>
+                            <td><s:textarea id="details" key="details" rows="3" style="text-transform:uppercase" maxLength="45"></s:textarea></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
