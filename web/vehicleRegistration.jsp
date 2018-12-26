@@ -22,6 +22,7 @@
         <script type="text/javascript" src="js/noCache.js"></script>
         <script type="text/javascript" src="js/searchBtn.js"></script>
         <sj:head/>
+        <script src="js/textNumber.js"></script>
 
     </head>
     <body onload="noBack();" onpageshow="if (event.persisted) noBack();" onunload="">
@@ -35,48 +36,48 @@
                     <tbody>
                         <tr>
                             <td><s:label>Branch :</s:label></td>
-                            <td><s:select list="{'aaa','ddddd'}"></s:select></td>
+                            <td><s:select list="{'aaa','ddddd'}" style="text-transform:uppercase"></s:select></td>
                             <td><s:label>Vehicle&nbsp;No :</s:label></td>
-                            <td><s:textfield id="vehicleNo" key="vehicleNo"></s:textfield></td>
+                            <td><s:textfield id="vehicleNo" key="vehicleNo" style="text-transform:uppercase"></s:textfield></td>
                             </tr>
                             <tr>
                             <td><s:label>Manufactured&nbsp;Year :</s:label></td>
                             <td><s:textfield id="manifacturedYear" key="manifacturedYear"></s:textfield></td>
                             <td><s:label>Type :</s:label></td>
-                            <td><s:textfield id="type" key="type"></s:textfield></td>
+                            <td><s:textfield id="type" key="type" style="text-transform:uppercase"></s:textfield></td>
                             </tr>
 
                             <tr>
                             <td><s:label>Brand :</s:label></td>
-                            <td><s:textfield id="brand" key="brand"></s:textfield></td>
+                            <td><s:textfield id="brand" key="brand" style="text-transform:uppercase"></s:textfield></td>
                             <td><s:label>Model :</s:label></td>
-                            <td><s:textfield id="model" key="model"></s:textfield></td>
+                            <td><s:textfield id="model" key="model" style="text-transform:uppercase"></s:textfield></td>
                             </tr>
 
                             <tr>
                             <td><s:label>Purchase&nbsp;Date :</s:label></td>
                             <td><sj:datepicker id="purchaseDate"></sj:datepicker></td>
                             <td><s:label>Purchase&nbsp;Price :</s:label></td>
-                            <td><s:textfield id="purchasePrice" key="purchasePrice"></s:textfield></td>
+                            <td><s:textfield id="purchasePrice" key="purchasePrice" style="text-transform:uppercase"></s:textfield></td>
                             </tr>
 
                             <tr>
                             <td><s:label>Owner :</s:label></td>
-                            <td><s:textfield id="owner" key="owner"></s:textfield></td>
+                            <td><s:textfield id="owner" key="owner" style="text-transform:uppercase"></s:textfield></td>
                             <td><s:label>Address :</s:label></td>
-                            <td><s:textfield id="address" key="address"></s:textfield></td>
+                            <td><s:textfield id="address" key="address" style="text-transform:uppercase"></s:textfield></td>
                             </tr>
 
                             <tr>
                             <td><s:label>Contact No :</s:label></td>
-                            <td><s:textfield id="contactNo" key="contactNo"></s:textfield></td>
+                            <td><s:textfield id="contactNo" key="contactNo" onkeypress="return isNumber(event)" maxlength="10"></s:textfield></td>
                             <td><s:label>Vender :</s:label></td>
-                            <td><s:textfield id="vender" key="vender"></s:textfield></td>
+                            <td><s:textfield id="vender" key="vender" style="text-transform:uppercase"></s:textfield></td>
                             </tr>
 
                             <tr>
                             <td><s:label>Status :</s:label></td>
-                            <td><s:select list="{'aaa','ddddd'}"></s:select></td>
+                            <td><s:select list="{'aaa','ddddd'}" style="text-transform:uppercase"></s:select></td>
                             <td><s:label>Vehicle&nbsp;Book :</s:label></td>
                             <td><s:file name="upload"></s:file></td>
                             </tr>
@@ -100,7 +101,7 @@
             <hr>
             <h4>Vehicle Registration</h4>
             <br>
-            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()"></s:textfield></p>
+            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()" style="text-transform:uppercase"></s:textfield></p>
                 <br>
 
             <s:form theme="simple">
