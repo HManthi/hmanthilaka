@@ -28,7 +28,7 @@
             <h3>Enter Department Details</h3>
             <br>
             <s:form theme="simple" action="branchAdd" method="POST">
-                <s:label>Name :</s:label>&nbsp;<s:textfield id="name" label="Name" key="name"></s:textfield><br><br>
+                <s:label>Name :</s:label>&nbsp;<s:textfield id="name" label="Name" key="name" style="text-transform:uppercase"></s:textfield><br><br>
                 <table width="25">
                     <thead>
                     <tbody>
@@ -42,7 +42,7 @@
             <br>
                 <hr>
             <br>
-            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()"></s:textfield></p>
+            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()" style="text-transform:uppercase"></s:textfield></p>
             <h4>Department Details</h4>
                 
                 <s:form theme="simple">
