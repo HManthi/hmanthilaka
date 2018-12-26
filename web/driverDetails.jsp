@@ -19,6 +19,7 @@
         <link rel="stylesheet" type="text/css" href="css/positionCss.css" />
         <script src="js/modernizr.custom.js"></script>
         <script src="js/datePicker.js"></script>
+        <script src="js/textNumber.js"></script>
         <script type="text/javascript" src="js/noCache.js"></script>
         <sj:head/>
         <script type="text/javascript" src="js/searchBtn.js"></script>
@@ -34,23 +35,23 @@
                 <tbody>
                         <tr>
                             <td><s:label>Driver&nbsp;ID :</s:label></td>
-                            <td><s:textfield id="driverId" key="driverId"></s:textfield></td>
+                            <td><s:textfield id="driverId" key="driverId" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Name :</s:label></td>
-                            <td><s:textfield id="driverName" key="driverName"></s:textfield></td>
+                            <td><s:textfield id="driverName" key="driverName" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Address :</s:label></td>
-                            <td><s:textfield id="address" key="address"></s:textfield></td>
+                            <td><s:textfield id="address" key="address" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Contact&nbsp;No :</s:label></td>
-                            <td><s:textfield id="contactNo" key="contactNo"></s:textfield></td>
+                            <td><s:textfield id="contactNo" key="contactNo" onkeypress="return isNumber(event)" maxlength="10"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>License&nbsp;No :</s:label></td>
-                            <td><s:textfield id="licenseNo" key="licenseNo"></s:textfield></td>
+                            <td><s:textfield id="licenseNo" key="licenseNo" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Gender :</s:label></td>
@@ -75,7 +76,7 @@
             <hr>
             <h4>Driver Details</h4>
             <br>
-            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()"></s:textfield></p>
+            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()" style="text-transform:uppercase"></s:textfield></p>
             <br>
             
             <s:form theme="simple">
