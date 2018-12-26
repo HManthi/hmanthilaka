@@ -13,7 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<script src="js/modernizr.custom.js"></script>
                 <script type="text/javascript" src="js/searchBtn.js"></script>
-
+                <script src="js/textNumber.js"></script>
 </head>
 
 <body onload="noBack();" onpageshow="if (event.persisted) noBack();" onunload="">
@@ -30,28 +30,28 @@
                <tbody>
                    <tr>
                        <td><s:label>User Name :</s:label></td>
-                       <td><s:textfield id="userName" key="userName"></s:textfield></td>
+                       <td><s:textfield id="userName" key="userName" style="text-transform:uppercase"></s:textfield></td>
                        <td><s:label>First Name :</s:label></td>
-                       <td><s:textfield id="firstName" key="firstName"></s:textfield></td>
+                       <td><s:textfield id="firstName" key="firstName" style="text-transform:uppercase"></s:textfield></td>
                    </tr>
                    <tr>
                        <td><s:label>Last Name :</s:label></td>
-                       <td><s:textfield id="lastName" key="lastName"></s:textfield></td>
+                       <td><s:textfield id="lastName" key="lastName" style="text-transform:uppercase"></s:textfield></td>
                        <td><s:label>Password :</s:label></td>
                        <td><s:textfield id="password" key="password"></s:textfield></td>
                    </tr>
                    <tr>
                        <td><s:label>Contact No :</s:label></td>
-                       <td><s:textfield id="contactNo" key="contactNo"></s:textfield></td>
+                       <td><s:textfield id="contactNo" key="contactNo" onkeypress="return isNumber(event)" maxlength="10"></s:textfield></td>
                        <td><s:label>Role :</s:label></td>
-                       <td><s:select id="role" list="{'AAAA','FFFFF','RRRRRR'}"></s:select></td>
+                       <td><s:select id="role" list="{'AAAA','FFFFF','RRRRRR'}" style="text-transform:uppercase"></s:select></td>
                        
                    </tr>
                    <tr>
                        <td><s:label>Department :</s:label></td>
-                       <td><s:select id="department" list="{'AAAA','FFFFF','RRRRRR'}"></s:select></td>
+                       <td><s:select id="department" list="{'AAAA','FFFFF','RRRRRR'}" style="text-transform:uppercase"></s:select></td>
                        <td><s:label>Branch :</s:label></td>
-                       <td><s:select id="branch" list="{'AAAA','FFFFF','RRRRRR'}"></s:select></td>
+                       <td><s:select id="branch" list="{'AAAA','FFFFF','RRRRRR'}" style="text-transform:uppercase"></s:select></td>
                        
                    </tr>
                    <tr>
@@ -76,7 +76,7 @@
             <h4>User Details</h4>
 
             <br>
-            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()"></s:textfield></p>
+            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()" style="text-transform:uppercase"></s:textfield></p>
 
             <br>
             <s:form theme="simple">
