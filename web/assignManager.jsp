@@ -31,19 +31,19 @@
                     <tbody>
                         <tr>
                             <td><s:label>Manager :</s:label></td>
-                            <td><s:textfield id="manager" key="manager"></s:textfield></td>
+                            <td><s:textfield id="manager" key="manager" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Vehicle No :</s:label></td>
-                            <td><s:textfield id="vehicleNo" key="vehicleNo"></s:textfield></td>
+                            <td><s:textfield id="vehicleNo" key="vehicleNo" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Driver :</s:label></td>
-                            <td><s:textfield id="driver" key="driver"></s:textfield></td>
+                            <td><s:textfield id="driver" key="driver" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Contact :</s:label></td>
-                            <td><s:textfield id="contact" key="contact"></s:textfield></td>
+                            <td><s:textfield id="contact" key="contact" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
@@ -55,7 +55,7 @@
             <br>
             <hr>
             <br><br>
-            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()"></s:textfield></p>
+            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()" style="text-transform:uppercase"></s:textfield></p>
             <h4>Manager Details</h4>
                 <br>
                 <s:form theme="simple">
