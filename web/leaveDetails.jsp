@@ -37,19 +37,19 @@
                     <tbody>
                         <tr>
                             <td><s:label>Driver ID :</s:label></td>
-                            <td><s:textfield id="driverId" key="driverId"></s:textfield></td>
+                            <td><s:textfield id="driverId" key="driverId" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Driver Name :</s:label></td>
-                            <td><s:textfield id="driverName" key="driverName"></s:textfield></td>
+                            <td><s:textfield id="driverName" key="driverName" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>From :</s:label></td>
-                            <td><s:textfield id="from" key="from"></s:textfield></td>
+                            <td><s:textfield id="from" key="from" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>To :</s:label></td>
-                            <td><s:textfield id="to" key="to"></s:textfield></td>
+                            <td><s:textfield id="to" key="to" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
@@ -61,7 +61,7 @@
             <br>
                 <hr>
                 <br>
-                <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()"></s:textfield></p>
+                <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()" style="text-transform:uppercase"></s:textfield></p>
                 <h4>Leave Details</h4>
                 
                 <s:form theme="simple">
