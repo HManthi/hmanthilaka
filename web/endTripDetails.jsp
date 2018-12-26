@@ -32,7 +32,7 @@
                     <tbody>
                         <tr>
                             <td><s:label>Trip ID :</s:label></td>
-                            <td><s:textfield id="tripId" key="tripId"></s:textfield></td>
+                            <td><s:textfield id="tripId" key="tripId" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Trip Cost :</s:label></td>
@@ -40,15 +40,15 @@
                         </tr>
                         <tr>
                             <td><s:label>Start Mileage :</s:label></td>
-                            <td><s:textfield id="startMileage" key="startMileage"></s:textfield></td>
+                            <td><s:textfield id="startMileage" key="startMileage" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>End Mileage :</s:label></td>
-                            <td><s:textfield id="endtMileage" key="endMileage"></s:textfield></td>
+                            <td><s:textfield id="endtMileage" key="endMileage" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>End Time :</s:label></td>
-                            <td><s:textfield id="endTime" key="endTime"></s:textfield></td>
+                            <td><s:textfield id="endTime" key="endTime" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
@@ -60,7 +60,7 @@
             <br>
                 <hr>
                 <br>
-                <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()"></s:textfield></p>
+                <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()" style="text-transform:uppercase"></s:textfield></p>
                 <h4>End Trip Details</h4>
                 
                 <s:form theme="simple">
