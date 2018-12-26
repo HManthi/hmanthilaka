@@ -32,19 +32,19 @@
                     <tbody>
                         <tr>
                             <td><s:label>Vehicle No :</s:label></td>
-                            <td><s:textfield id="vehicleNo" key="vehicleNo"></s:textfield></td>
+                            <td><s:textfield id="vehicleNo" key="vehicleNo" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Cost :</s:label></td>
-                            <td><s:textfield id="cost" key="cost"></s:textfield></td>
+                            <td><s:textfield id="cost" key="cost" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Reason :</s:label></td>
-                            <td><s:textarea id="reason" key="reason" rows="3"></s:textarea></td>
+                            <td><s:textarea id="reason" key="reason" rows="3" style="text-transform:uppercase"></s:textarea></td>
                         </tr>
                         <tr>
                             <td><s:label>Details :</s:label></td>
-                            <td><s:textarea id="details" key="details" rows="3"></s:textarea></td>
+                            <td><s:textarea id="details" key="details" rows="3" style="text-transform:uppercase"></s:textarea></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
@@ -56,7 +56,7 @@
             <br>
                 <hr>
                 <br>
-                <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()"></s:textfield></p>
+                <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()" style="text-transform:uppercase"></s:textfield></p>
                 <h4>Maintenance Details</h4>
                 
                 <s:form theme="simple">
