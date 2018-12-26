@@ -33,15 +33,15 @@
                     <tbody>
                         <tr>
                             <td><s:label>Vehicle&nbsp;No :</s:label></td>
-                            <td><s:textfield id="vehicleNo" label="Vehicle No" key="vehicleNo"></s:textfield></td>
+                            <td><s:textfield id="vehicleNo" label="Vehicle No" key="vehicleNo" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Driver :</s:label></td>
-                            <td><s:textfield id="driver" key="driver"></s:textfield></td>
+                            <td><s:textfield id="driver" key="driver" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Reason :</s:label></td>
-                            <td><s:textfield id="reason" key="reason"></s:textfield></td>
+                            <td><s:textfield id="reason" key="reason" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Cost :</s:label></td>
@@ -49,7 +49,7 @@
                         </tr>
                         <tr>
                             <td><s:label>Location :</s:label></td>
-                            <td><s:textfield id="location" key="location"></s:textfield></td>
+                            <td><s:textfield id="location" key="location" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Claim&nbsp;Amount :</s:label></td>
@@ -66,7 +66,7 @@
             <br>
             <hr>
             <br><br>
-            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()"></s:textfield></p>
+            <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()" style="text-transform:uppercase"></s:textfield></p>
             <br>
             <s:form theme="simple">
                 <center>
