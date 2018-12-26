@@ -45,7 +45,7 @@
                         </tr>
                         <tr>
                             <td><s:label>Cost :</s:label></td>
-                            <td><s:textfield id="cost" key="cost"></s:textfield maxLength="45"></td>
+                            <td><s:textfield id="cost" key="cost" maxLength="45" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Location :</s:label></td>
@@ -53,7 +53,7 @@
                         </tr>
                         <tr>
                             <td><s:label>Claim&nbsp;Amount :</s:label></td>
-                            <td><s:textfield id="claimAmount" key="claimAmount" maxLength="45"></s:textfield></td>
+                            <td><s:textfield id="claimAmount" key="claimAmount" maxLength="45" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
