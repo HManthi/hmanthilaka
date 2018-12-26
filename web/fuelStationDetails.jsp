@@ -20,6 +20,7 @@
         <link rel="stylesheet" type="text/css" href="css/positionCss.css" />
         <script src="js/modernizr.custom.js"></script>
         <script type="text/javascript" src="js/searchBtn.js"></script>
+        <script src="js/textNumber.js"></script>
     </head>
     <body onload="noBack();" onpageshow="if(event.persisted) noBack();" onunload="">
         <font color="white">
@@ -32,23 +33,23 @@
                     <tbody>
                         <tr>
                             <td><s:label>Station Name :</s:label></td>
-                            <td><s:textfield id="stationName" key="stationName"></s:textfield></td>
+                            <td><s:textfield id="stationName" key="stationName" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Location :</s:label></td>
-                            <td><s:textfield id="location" key="location"></s:textfield></td>
+                            <td><s:textfield id="location" key="location" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Owner :</s:label></td>
-                            <td><s:textfield id="owner" key="owner"></s:textfield></td>
+                            <td><s:textfield id="owner" key="owner" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Contact No :</s:label></td>
-                            <td><s:textfield id="contactNo" key="contactNo"></s:textfield></td>
+                            <td><s:textfield id="contactNo" key="contactNo" onkeypress="return isNumber(event)" maxlength="10"></s:textfield></td>
                         </tr>
                         <tr>
                             <td><s:label>Price :</s:label></td>
-                            <td><s:textfield id="price" key="price"></s:textfield></td>
+                            <td><s:textfield id="price" key="price" style="text-transform:uppercase"></s:textfield></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
@@ -60,7 +61,7 @@
             <br>
                 <hr>
                 <br>
-                <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()"></s:textfield></p>
+                <s:select label="Show" list="{'10','50','100'}"></s:select>&nbsp;entries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:textfield id="myInput" label="Search" key="search" onkeyup="myFunction()" style="text-transform:uppercase"></s:textfield></p>
                 <h4>Fuel Station Details</h4>
                 
                 <s:form theme="simple">
